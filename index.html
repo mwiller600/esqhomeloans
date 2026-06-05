@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ESQ Home Loans | Jumbo Mortgage Strategy for Attorneys and Legal Professionals</title>
+  <meta name="description" content="Specialized home financing for attorneys, partners, and legal professionals. Jumbo loans up to $3M. Complex income, student loan debt, partner draws, structured correctly from day one. Powered by Michelle Willer and Flat Branch Home Loans." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg:        #080808;
+      --bg2:       #0f0f0f;
+      --bg3:       #141414;
+      --gold:      #c8922a;
+      --gold-lt:   #e0b060;
+      --cream:     #f0ead8;
+      --cream-dim: rgba(240,234,216,0.55);
+      --cream-xs:  rgba(240,234,216,0.18);
+      --rule:      rgba(240,234,216,0.1);
+      --serif:     'Cormorant Garamond', Georgia, serif;
+      --sans:      'Outfit', sans-serif;
+      --ease:      cubic-bezier(.4,0,.2,1);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--cream);
+      font-family: var(--sans);
+      font-weight: 300;
+      line-height: 1.6;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 9999;
+      opacity: .5;
+    }
+
+    /* NAV */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 22px 48px;
+      border-bottom: 1px solid transparent;
+      transition: background .4s var(--ease), border-color .4s var(--ease), padding .3s var(--ease);
+    }
+    nav.scrolled {
+      background: rgba(8,8,8,.92);
+      backdrop-filter: blur(12px);
+      border-color: var(--rule);
+      padding: 16px 48px;
+    }
+    .nav-logo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+      cursor: pointer;
+    }
+    .nav-logo-esq-wrap {
+      position: relative;
+      padding-bottom: 5px;
+    }
+    .nav-logo-esq {
+      font-family: var(--serif);
+      font-size: 22px;
+      font-weight: 400;
+      letter-spacing: .18em;
+      color: var(--cream);
+      line-height: 1;
+      display: block;
+    }
+    .nav-logo-line {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 1.5px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    }
+    .nav-logo-sub {
+      font-family: var(--sans);
+      font-size: 8px;
+      font-weight: 600;
+      letter-spacing: .38em;
+      text-transform: uppercase;
+      color: #ffffff;
+      line-height: 1;
+    }
+    .nav-links {
+      display: flex;
+      gap: 36px;
+      list-style: none;
+    }
+    .nav-links a {
+      font-size: 11px;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--cream-dim);
+      transition: color .2s;
+    }
+    .nav-links a:hover { color: var(--cream); }
+    .nav-cta {
+      font-size: 11px;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      background: var(--gold);
+      color: #080808;
+      padding: 10px 22px;
+      font-weight: 600;
+      border-radius: 2px;
+      transition: background .2s;
+    }
+    .nav-cta:hover { background: var(--gold-lt); }
+
+    /* HERO */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 0 48px 80px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 60% 50% at 80% 30%, rgba(200,146,42,.07) 0%, transparent 70%),
+        radial-gradient(ellipse 40% 60% at 10% 80%, rgba(200,146,42,.04) 0%, transparent 60%),
+        linear-gradient(180deg, #080808 0%, #0a0907 100%);
+    }
+    .hero-line {
+      position: absolute;
+      top: 0; bottom: 0;
+      left: 48px;
+      width: 1px;
+      background: linear-gradient(180deg, transparent 0%, var(--gold) 30%, var(--gold) 70%, transparent 100%);
+      opacity: .18;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 760px;
+    }
+    .hero-eyebrow {
+      font-size: 11px;
+      letter-spacing: .28em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 32px;
+      opacity: 0;
+      animation: fadeUp .8s var(--ease) .2s forwards;
+    }
+    .hero h1 {
+      font-family: var(--serif);
+      font-size: clamp(52px, 7vw, 88px);
+      font-weight: 300;
+      line-height: 1.0;
+      color: var(--cream);
+      margin-bottom: 28px;
+      opacity: 0;
+      animation: fadeUp .9s var(--ease) .4s forwards;
+    }
+    .hero h1 em {
+      font-style: italic;
+      color: var(--gold-lt);
+    }
+    .hero-sub {
+      font-size: 16px;
+      line-height: 1.75;
+      color: var(--cream-dim);
+      max-width: 480px;
+      margin-bottom: 44px;
+      opacity: 0;
+      animation: fadeUp .9s var(--ease) .6s forwards;
+    }
+    .hero-btns {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      opacity: 0;
+      animation: fadeUp .9s var(--ease) .8s forwards;
+    }
+    .btn-primary {
+      display: inline-block;
+      background: var(--gold);
+      color: #080808;
+      font-family: var(--sans);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      padding: 16px 36px;
+      border-radius: 2px;
+      border: none;
+      cursor: pointer;
+      transition: background .2s, transform .15s;
+    }
+    .btn-primary:hover { background: var(--gold-lt); transform: translateY(-1px); }
+    .btn-ghost {
+      display: inline-block;
+      background: transparent;
+      color: var(--cream);
+      font-family: var(--sans);
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      padding: 15px 36px;
+      border-radius: 2px;
+      border: 1px solid rgba(240,234,216,.4);
+      cursor: pointer;
+      transition: border-color .2s, color .2s, transform .15s;
+    }
+    .btn-ghost:hover { border-color: var(--cream); transform: translateY(-1px); }
+    .hero-scroll {
+      position: absolute;
+      bottom: 32px;
+      right: 48px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 10px;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: var(--cream-xs);
+      opacity: 0;
+      animation: fadeIn 1s var(--ease) 1.4s forwards;
+    }
+    .hero-scroll::before {
+      content: '';
+      display: block;
+      width: 40px;
+      height: 1px;
+      background: var(--cream-xs);
+    }
+
+    /* HOOK */
+    .hook {
+      padding: 72px 48px;
+      border-top: 1px solid var(--rule);
+      border-bottom: 1px solid var(--rule);
+      display: flex;
+      gap: 48px;
+      align-items: flex-start;
+    }
+    .hook-bar {
+      width: 2px;
+      height: 72px;
+      background: linear-gradient(180deg, var(--gold), transparent);
+      flex-shrink: 0;
+      margin-top: 6px;
+    }
+    .hook-text {
+      font-family: var(--serif);
+      font-size: clamp(22px, 2.5vw, 30px);
+      font-weight: 300;
+      line-height: 1.55;
+      color: rgba(240,234,216,.8);
+    }
+    .hook-text strong {
+      font-weight: 500;
+      color: var(--cream);
+    }
+
+    /* SECTION */
+    .section {
+      padding: 96px 48px;
+      border-bottom: 1px solid var(--rule);
+    }
+    .section-label {
+      font-size: 10px;
+      letter-spacing: .28em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 48px;
+    }
+    .section-headline {
+      font-family: var(--serif);
+      font-size: clamp(32px, 4vw, 52px);
+      font-weight: 300;
+      line-height: 1.15;
+      color: var(--cream);
+      margin-bottom: 20px;
+    }
+    .section-sub {
+      font-size: 15px;
+      color: var(--cream-dim);
+      max-width: 560px;
+      line-height: 1.75;
+      margin-bottom: 56px;
+    }
+
+    /* PROBLEMS */
+    .problems-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1px;
+      background: var(--rule);
+    }
+    .problem-card {
+      background: var(--bg);
+      padding: 40px 36px;
+      position: relative;
+      overflow: hidden;
+      transition: background .3s;
+    }
+    .problem-card::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--gold);
+      transition: width .4s var(--ease);
+    }
+    .problem-card:hover { background: var(--bg2); }
+    .problem-card:hover::after { width: 100%; }
+    .problem-num {
+      font-family: var(--serif);
+      font-size: 48px;
+      font-weight: 300;
+      color: rgba(200,146,42,.15);
+      line-height: 1;
+      margin-bottom: 16px;
+    }
+    .problem-title {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--cream);
+      margin-bottom: 10px;
+      letter-spacing: .02em;
+    }
+    .problem-desc {
+      font-size: 13px;
+      line-height: 1.75;
+      color: var(--cream-dim);
+    }
+
+    /* BILLABLE */
+    .billable {
+      padding: 96px 48px;
+      border-bottom: 1px solid var(--rule);
+      background: var(--bg2);
+    }
+    .billable-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: start;
+    }
+    .billable-callout {
+      background: var(--bg3);
+      border: 1px solid var(--rule);
+      border-left: 3px solid var(--gold);
+      padding: 40px 36px;
+      margin-top: 40px;
+    }
+    .billable-num {
+      font-family: var(--serif);
+      font-size: 64px;
+      font-weight: 300;
+      color: var(--gold-lt);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .billable-num-label {
+      font-size: 13px;
+      color: var(--cream-dim);
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+    .billable-rate {
+      font-family: var(--serif);
+      font-size: 18px;
+      font-weight: 300;
+      font-style: italic;
+      color: var(--cream);
+      line-height: 1.5;
+    }
+
+    /* COMPARISON TABLE */
+    .compare-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+    .compare-table th {
+      text-align: left;
+      padding: 12px 16px;
+      font-size: 10px;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      border-bottom: 1px solid var(--rule);
+      font-weight: 500;
+    }
+    .compare-table th:last-child {
+      color: var(--cream);
+    }
+    .compare-table td {
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--rule);
+      color: var(--cream-dim);
+      vertical-align: top;
+      line-height: 1.5;
+    }
+    .compare-table td:first-child {
+      color: var(--cream);
+      font-weight: 400;
+      width: 36%;
+    }
+    .compare-table td:last-child {
+      color: var(--cream);
+    }
+    .compare-table td.highlight {
+      color: var(--gold-lt);
+      font-weight: 500;
+    }
+    .compare-table tr:last-child td { border-bottom: none; }
+
+    /* PROCESS */
+    .process-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: start;
+    }
+    .process-step {
+      display: flex;
+      gap: 28px;
+      padding: 24px 0;
+      border-top: 1px solid var(--rule);
+      align-items: flex-start;
+    }
+    .step-num {
+      font-family: var(--serif);
+      font-size: 13px;
+      color: var(--gold);
+      width: 20px;
+      flex-shrink: 0;
+      padding-top: 2px;
+    }
+    .step-title {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--cream);
+      margin-bottom: 6px;
+    }
+    .step-desc {
+      font-size: 13px;
+      color: var(--cream-dim);
+      line-height: 1.7;
+    }
+    .process-aside {
+      background: var(--bg2);
+      border: 1px solid var(--rule);
+      padding: 48px 40px;
+      position: sticky;
+      top: 100px;
+    }
+    .aside-headline {
+      font-family: var(--serif);
+      font-size: 26px;
+      font-weight: 300;
+      color: var(--cream);
+      line-height: 1.3;
+      margin-bottom: 20px;
+    }
+    .aside-body {
+      font-size: 13px;
+      color: var(--cream-dim);
+      line-height: 1.75;
+      margin-bottom: 32px;
+    }
+
+    /* STATS */
+    .stats {
+      padding: 56px 48px;
+      border-bottom: 1px solid var(--rule);
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background: var(--rule);
+    }
+    .stat {
+      background: var(--bg);
+      padding: 36px 32px;
+      text-align: center;
+    }
+    .stat-num {
+      font-family: var(--serif);
+      font-size: clamp(36px, 4vw, 52px);
+      font-weight: 300;
+      color: var(--cream);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .stat-num span { color: var(--gold-lt); }
+    .stat-label {
+      font-size: 10px;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: var(--cream-dim);
+    }
+    .stat-link {
+      display: inline-block;
+      margin-top: 8px;
+      font-size: 10px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--gold);
+      border-bottom: 1px solid rgba(200,146,42,.3);
+      transition: border-color .2s;
+    }
+    .stat-link:hover { border-color: var(--gold); }
+
+    /* TESTIMONIAL */
+    .testimonial-inner { max-width: 680px; }
+    blockquote {
+      font-family: var(--serif);
+      font-size: clamp(20px, 2.5vw, 28px);
+      font-weight: 300;
+      font-style: italic;
+      line-height: 1.6;
+      color: rgba(240,234,216,.75);
+      margin-bottom: 24px;
+      position: relative;
+      padding-left: 32px;
+    }
+    blockquote::before {
+      content: '\201C';
+      position: absolute;
+      left: 0;
+      top: -8px;
+      font-size: 64px;
+      color: var(--gold);
+      opacity: .3;
+      font-family: var(--serif);
+      line-height: 1;
+    }
+    .quote-attr {
+      font-size: 11px;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    /* ABOUT */
+    .about-layout {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 80px;
+      align-items: start;
+    }
+    .about-photo-placeholder {
+      width: 100%;
+      aspect-ratio: 3/4;
+      background: var(--bg3);
+      border: 1px solid var(--rule);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .about-photo-placeholder::after {
+      content: 'Photo';
+      font-family: var(--serif);
+      font-size: 13px;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      color: var(--cream-xs);
+    }
+    .about-photo-accent {
+      position: absolute;
+      bottom: -16px;
+      right: -16px;
+      width: 60%;
+      height: 60%;
+      border: 1px solid rgba(200,146,42,.2);
+      pointer-events: none;
+    }
+    .about-body {
+      font-size: 14px;
+      line-height: 1.85;
+      color: var(--cream-dim);
+      margin-bottom: 20px;
+    }
+    .about-body strong { color: var(--cream); font-weight: 500; }
+    .about-detail {
+      margin-top: 36px;
+      padding-top: 32px;
+      border-top: 1px solid var(--rule);
+    }
+    .about-detail-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--rule);
+      font-size: 12px;
+    }
+    .about-detail-label {
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--cream-dim);
+      font-size: 10px;
+    }
+    .about-detail-val {
+      color: var(--cream);
+      font-weight: 400;
+      text-align: right;
+    }
+
+    /* STATES */
+    .states-row {
+      padding: 36px 48px;
+      border-bottom: 1px solid var(--rule);
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .states-label {
+      font-size: 10px;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      color: var(--cream-dim);
+      flex-shrink: 0;
+      margin-right: 8px;
+    }
+    .state-tag {
+      font-size: 11px;
+      letter-spacing: .12em;
+      color: var(--cream-dim);
+      padding: 5px 14px;
+      border: 1px solid var(--rule);
+      border-radius: 2px;
+      transition: border-color .2s, color .2s;
+    }
+    .state-tag:hover { border-color: var(--gold); color: var(--gold); }
+
+    /* FINAL CTA */
+    .final-cta {
+      padding: 120px 48px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .final-cta-bg {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 60% 80% at 50% 50%, rgba(200,146,42,.06) 0%, transparent 70%);
+    }
+    .final-cta-content { position: relative; z-index: 2; }
+    .final-cta h2 {
+      font-family: var(--serif);
+      font-size: clamp(36px, 5vw, 64px);
+      font-weight: 300;
+      color: var(--cream);
+      line-height: 1.15;
+      margin-bottom: 16px;
+    }
+    .final-cta h2 em { font-style: italic; color: var(--gold-lt); }
+    .final-cta p {
+      font-size: 15px;
+      color: var(--cream-dim);
+      margin-bottom: 48px;
+      max-width: 440px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .final-cta-btns {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    /* FOOTER */
+    footer {
+      padding: 36px 48px;
+      border-top: 1px solid var(--rule);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .footer-left {
+      font-size: 11px;
+      color: rgba(240,234,216,.25);
+      line-height: 1.9;
+    }
+    .footer-right {
+      font-size: 11px;
+      color: rgba(240,234,216,.25);
+      text-align: right;
+      line-height: 1.9;
+    }
+    .footer-logo-esq {
+      color: rgba(200,146,42,.5);
+      font-family: var(--serif);
+      font-size: 15px;
+      letter-spacing: .1em;
+    }
+    .footer-logo-line {
+      display: block;
+      height: 1px;
+      background: linear-gradient(90deg,transparent,rgba(200,146,42,.3),transparent);
+      margin: 3px 0;
+    }
+    .footer-logo-sub {
+      display: block;
+      font-family: var(--sans);
+      font-size: 7px;
+      font-weight: 600;
+      letter-spacing: .3em;
+      color: rgba(255,255,255,.25);
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    /* ANIMATIONS */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+    .reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity .7s var(--ease), transform .7s var(--ease);
+    }
+    .reveal.visible { opacity: 1; transform: none; }
+
+    /* MOBILE */
+    @media (max-width: 768px) {
+      nav { padding: 18px 24px; }
+      nav.scrolled { padding: 14px 24px; }
+      .nav-links { display: none; }
+      .hero { padding: 0 24px 64px; }
+      .hero-line { left: 24px; }
+      .hook { padding: 48px 24px; flex-direction: column; gap: 24px; }
+      .section { padding: 64px 24px; }
+      .billable { padding: 64px 24px; }
+      .billable-layout { grid-template-columns: 1fr; gap: 40px; }
+      .problems-grid { grid-template-columns: 1fr; }
+      .process-layout { grid-template-columns: 1fr; gap: 48px; }
+      .process-aside { position: static; }
+      .stats { grid-template-columns: repeat(2, 1fr); }
+      .about-layout { grid-template-columns: 1fr; gap: 48px; }
+      .states-row { padding: 24px; }
+      .final-cta { padding: 80px 24px; }
+      footer { padding: 28px 24px; flex-direction: column; align-items: flex-start; }
+      .footer-right { text-align: left; }
+      .compare-table { font-size: 12px; }
+      .compare-table th, .compare-table td { padding: 10px 10px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <div class="nav-logo">
+      <div class="nav-logo-esq-wrap">
+        <span class="nav-logo-esq">ESQ</span>
+        <div class="nav-logo-line"></div>
+      </div>
+      <span class="nav-logo-sub">Home Loans</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#challenges">Challenges</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+    <a href="https://home.fbhl.com/signup/michelle.willer/D3RUKIVECCMA3ILN1C5G" class="nav-cta" target="_blank" rel="noopener">Apply Now</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-line"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Mortgage Strategy for Legal Professionals · Powered by Michelle Willer and Flat Branch Home Loans</p>
+      <h1>The mortgage<br>built for<br><em>attorneys.</em></h1>
+      <p class="hero-sub">Complex income. Law school debt. Partner draws. These are not obstacles. They are structuring questions. Get the financing strategy your career demands.</p>
+      <div class="hero-btns">
+        <a href="https://home.fbhl.com/signup/michelle.willer/D3RUKIVECCMA3ILN1C5G" class="btn-primary" target="_blank" rel="noopener">Start Your Application</a>
+        <a href="https://calendly.com/michellewiller" class="btn-ghost" target="_blank" rel="noopener">Schedule a Call</a>
+      </div>
+    </div>
+    <div class="hero-scroll">Scroll</div>
+  </section>
+
+  <!-- HOOK -->
+  <div class="hook reveal">
+    <div class="hook-bar"></div>
+    <p class="hook-text">
+      Most lenders go back to clients five times for documents. Each round costs days of delay and hours of non-billable time.<br><br>
+      This practice requests everything upfront, complete, on day one.<br><br>
+      <strong>For attorneys who move fast, approval in as little as one week.</strong>
+    </p>
+  </div>
+
+  <!-- CHALLENGES -->
+  <section class="section" id="challenges">
+    <p class="section-label">Why attorneys need a different approach</p>
+    <h2 class="section-headline reveal">Your financial profile does not fit<br>a standard mortgage checklist.</h2>
+    <p class="section-sub reveal">Law school debt, partner draws, K-1 income, and variable compensation require a lender who understands how legal professionals actually earn. Most do not. This practice does.</p>
+    <div class="problems-grid">
+      <div class="problem-card reveal">
+        <div class="problem-num">01</div>
+        <div class="problem-title">Timing and Access</div>
+        <div class="problem-desc">There is no time to chase a lender. Closings need to happen around trial schedules and deal timelines, not the other way around. Direct access, fast answers, and a team that manages the process end to end, in house.</div>
+      </div>
+      <div class="problem-card reveal">
+        <div class="problem-num">02</div>
+        <div class="problem-title">Partner and Draw Income</div>
+        <div class="problem-desc">Equity partners do not receive a W-2. Monthly draws, year-end distributions, and K-1s are real income, but lenders who do not understand partnership structures routinely undercount them. Proper documentation and the right loan program changes the outcome entirely.</div>
+      </div>
+      <div class="problem-card reveal">
+        <div class="problem-num">03</div>
+        <div class="problem-title">Variable Compensation</div>
+        <div class="problem-desc">Bonuses, origination fees, and contingency payouts are legitimate income. Knowing which programs recognize them, and how to document them correctly for underwriting, is the difference between qualifying and not.</div>
+      </div>
+      <div class="problem-card reveal">
+        <div class="problem-num">04</div>
+        <div class="problem-title">Student Loan Debt</div>
+        <div class="problem-desc">Law school debt changes the math on every mortgage application. Depending on the repayment structure, IBR, standard, or deferred, lenders calculate debt-to-income ratios very differently. The right strategy here can mean significant additional purchasing power.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BILLABLE HOURS -->
+  <section class="billable" id="efficiency">
+    <p class="section-label">What a disorganized lender actually costs</p>
+    <div class="billable-layout">
+      <div>
+        <h2 class="section-headline reveal">What does a disorganized lender actually cost you?</h2>
+        <p class="section-sub reveal" style="margin-bottom:24px;">Most lenders go back to clients five times for additional documents. Each callback costs days of delay and hours of non-billable time.</p>
+        <p class="about-body reveal">The typical mortgage process works like this: a lender collects what they think they need, submits to underwriting, then waits for the underwriter to flag problems. By the time anyone takes a real look at the file, a week is already gone. Then they come back to you. Then again. Then again, up to five times before the file is complete.</p>
+        <p class="about-body reveal">Each callback means locating documents, context-switching away from client work, and waiting another few days while the file sits in a queue. Across five rounds, that is 5 to 10 hours of interrupted, non-billable time spent on a process that had nothing to do with practicing law.</p>
+        <p class="about-body reveal">This practice works differently. Every document is identified and requested upfront, before the file goes anywhere. The list is complete on day one. No unexpected callbacks. No reactive scrambles. No delays caused by a lender who did not prepare in advance.</p>
+        <p class="about-body reveal">For clients who respond promptly, full approval is achievable in as little as one week.</p>
+        <div class="billable-callout reveal">
+          <div class="billable-num">5&ndash;10</div>
+          <div class="billable-num-label">hours recovered from a reactive lender process</div>
+          <div class="billable-rate">Multiply by your hourly rate.<br>That is what preparation is worth.</div>
+        </div>
+      </div>
+      <div class="reveal" style="margin-top: 8px;">
+        <p class="section-label" style="margin-bottom:24px;">ESQ Home Loans vs. the typical lender</p>
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th>The Detail</th>
+              <th>Typical Lender</th>
+              <th>ESQ Home Loans</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Document callbacks</td>
+              <td>Up to 5 rounds</td>
+              <td class="highlight">Zero unexpected requests</td>
+            </tr>
+            <tr>
+              <td>Time to first review</td>
+              <td>1 or more weeks</td>
+              <td class="highlight">Day one</td>
+            </tr>
+            <tr>
+              <td>Hours lost to back-and-forth</td>
+              <td>5 to 10 hours</td>
+              <td class="highlight">Minimal</td>
+            </tr>
+            <tr>
+              <td>Approval timeline</td>
+              <td>3 to 4 weeks</td>
+              <td class="highlight">As little as 1 week</td>
+            </tr>
+            <tr>
+              <td>Loan capacity</td>
+              <td>Up to $1M</td>
+              <td class="highlight">Up to $3M</td>
+            </tr>
+            <tr>
+              <td>Income expertise</td>
+              <td>Standard W-2</td>
+              <td class="highlight">Partner draws, K-1, variable comp</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="section" id="process">
+    <div class="process-layout">
+      <div>
+        <p class="section-label">How it works</p>
+        <h2 class="section-headline reveal">A mortgage process designed around your schedule, your income, and your financial goals.</h2>
+        <p class="section-sub reveal">Every transaction starts with a strategy conversation after the application is received. The goal is a loan that fits the full financial picture to build wealth, coordinated with your CPA and wealth advisor from the start.</p>
+        <div class="process-steps">
+          <div class="process-step reveal">
+            <div class="step-num">01</div>
+            <div>
+              <div class="step-title">Strategy first</div>
+              <div class="step-desc">The conversation starts with your goals, your income structure, and your timeline. The right loan product comes from understanding the full picture, not just running numbers.</div>
+            </div>
+          </div>
+          <div class="process-step reveal">
+            <div class="step-num">02</div>
+            <div>
+              <div class="step-title">Documentation built correctly</div>
+              <div class="step-desc">Complex income files require precise documentation. You will know exactly what is needed and why. No surprises, no last-minute requests, and no delays caused by a lender who did not prepare the file correctly.</div>
+            </div>
+          </div>
+          <div class="process-step reveal">
+            <div class="step-num">03</div>
+            <div>
+              <div class="step-title">Straight answers</div>
+              <div class="step-desc">Every option gets explained clearly: rates, tradeoffs, cash flow implications, and how each structure interacts with your broader financial plan. No sales pitch. No pressure. Just the information needed to make a confident decision.</div>
+            </div>
+          </div>
+          <div class="process-step reveal">
+            <div class="step-num">04</div>
+            <div>
+              <div class="step-title">A closing that happens on time</div>
+              <div class="step-desc">The timeline is managed from day one. You focus on your practice. The rest gets handled.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="process-aside reveal">
+        <p class="aside-headline">The conversation starts here.</p>
+        <p class="aside-body">A short application is all it takes. Attorneys across eight states have financed homes up to $3M through this practice, without the frustration of lenders who did not understand their income.</p>
+        <a href="https://home.fbhl.com/signup/michelle.willer/D3RUKIVECCMA3ILN1C5G" class="btn-primary" target="_blank" rel="noopener" style="display:block;text-align:center;margin-bottom:12px;">Start Your Application</a>
+        <a href="https://calendly.com/michellewiller" class="btn-ghost" target="_blank" rel="noopener" style="display:block;text-align:center;">Schedule a Call</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <div class="stats">
+    <div class="stat reveal">
+      <div class="stat-num">20<span>+</span></div>
+      <div class="stat-label">Years Experience</div>
+    </div>
+    <div class="stat reveal">
+      <div class="stat-num">4.92<span>&#9733;</span></div>
+      <div class="stat-label">Star Rating</div>
+      <a href="https://www.experience.com/reviews/michelle-willer-383738" class="stat-link" target="_blank" rel="noopener">379 Verified Reviews</a>
+    </div>
+    <div class="stat reveal">
+      <div class="stat-num">8</div>
+      <div class="stat-label">States Licensed</div>
+    </div>
+    <div class="stat reveal">
+      <div class="stat-num">$3<span>M</span></div>
+      <div class="stat-label">Loan Capacity</div>
+    </div>
+  </div>
+
+  <!-- TESTIMONIAL -->
+  <section class="section reveal">
+    <p class="section-label">Client voice</p>
+    <div class="testimonial-inner">
+      <blockquote>In a home buying process that was stressful at every other turn, Michelle and her team were the only consistent, accurate, and helpful part.</blockquote>
+      <p class="quote-attr">Verified Client, St. Louis MO</p>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <p class="section-label">About</p>
+    <div class="about-layout">
+      <div class="reveal" style="position:relative;">
+        <div class="about-photo-placeholder"></div>
+        <div class="about-photo-accent"></div>
+      </div>
+      <div>
+        <h2 class="section-headline reveal">20+ years. Built around the way<br><em>legal professionals earn.</em></h2>
+        <p class="about-body reveal">Attorneys, partners, and legal professionals have financial profiles that do not always fit neatly into standard underwriting boxes. After two decades of originating mortgages for high-income professionals and attorneys specifically, the documentation patterns, income structures, and qualification challenges that trip up other lenders are well-understood here.</p>
+        <p class="about-body reveal">Every transaction is approached as one piece of a larger financial strategy. That means coordinating with your CPA, wealth advisor, and financial team. The goal is a mortgage that fits your plan, not just the checklist.</p>
+        <p class="about-body reveal">Straight answers. Clear tradeoffs. No surprises at closing. That is the standard every attorney client should expect, and what this practice delivers.</p>
+        <div class="about-detail reveal">
+          <div class="about-detail-row">
+            <span class="about-detail-label">Advisor</span>
+            <span class="about-detail-val">Michelle Willer, Senior Mortgage Banker</span>
+          </div>
+          <div class="about-detail-row">
+            <span class="about-detail-label">Company</span>
+            <span class="about-detail-val">Flat Branch Home Loans</span>
+          </div>
+          <div class="about-detail-row">
+            <span class="about-detail-label">NMLS</span>
+            <span class="about-detail-val">595462</span>
+          </div>
+          <div class="about-detail-row">
+            <span class="about-detail-label">Specialty</span>
+            <span class="about-detail-val">Jumbo · Attorney · Complex Income</span>
+          </div>
+          <div class="about-detail-row">
+            <span class="about-detail-label">Loan Capacity</span>
+            <span class="about-detail-val">Up to $3,000,000</span>
+          </div>
+          <div class="about-detail-row">
+            <span class="about-detail-label">Phone</span>
+            <span class="about-detail-val">(314) 496-1478</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATES -->
+  <div class="states-row reveal">
+    <span class="states-label">Licensed in</span>
+    <span class="state-tag">AZ</span>
+    <span class="state-tag">FL</span>
+    <span class="state-tag">MO</span>
+    <span class="state-tag">IL</span>
+    <span class="state-tag">TX</span>
+    <span class="state-tag">NC</span>
+    <span class="state-tag">SC</span>
+    <span class="state-tag">TN</span>
+  </div>
+
+  <!-- FINAL CTA -->
+  <section class="final-cta">
+    <div class="final-cta-bg"></div>
+    <div class="final-cta-content reveal">
+      <h2>The right mortgage strategy<br>starts with <em>one conversation.</em></h2>
+      <p>Fill out a short application. A response comes within one business day.</p>
+      <div class="final-cta-btns">
+        <a href="https://home.fbhl.com/signup/michelle.willer/D3RUKIVECCMA3ILN1C5G" class="btn-primary" target="_blank" rel="noopener">Start Your Application</a>
+        <a href="https://calendly.com/michellewiller" class="btn-ghost" target="_blank" rel="noopener">Schedule a Call</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-left">
+      <span class="footer-logo-esq">ESQ</span>
+      <span class="footer-logo-line"></span>
+      <span class="footer-logo-sub">Home Loans</span>
+      Michelle Willer · Senior Mortgage Banker · NMLS 595462<br>
+      Flat Branch Home Loans · NMLS 224149 · Equal Housing Lender
+    </div>
+    <div class="footer-right">
+      AZ · FL · MO · IL · TX · NC · SC · TN<br>
+      (314) 496-1478<br>
+      esqhomeloans.com
+    </div>
+  </footer>
+
+  <script>
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 40);
+    });
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), i * 60);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    reveals.forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
