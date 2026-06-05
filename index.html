@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -161,7 +162,7 @@
     }
     .hero-eyebrow {
       font-size: 11px;
-      letter-spacing: .28em;
+      letter-spacing: .2em;
       text-transform: uppercase;
       color: var(--gold);
       margin-bottom: 32px;
@@ -397,6 +398,17 @@
     }
 
     /* COMPARISON TABLE */
+    .compare-wrap {
+      margin-top: 8px;
+    }
+    .compare-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--cream);
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
     .compare-table {
       width: 100%;
       border-collapse: collapse;
@@ -412,9 +424,7 @@
       border-bottom: 1px solid var(--rule);
       font-weight: 500;
     }
-    .compare-table th:last-child {
-      color: var(--cream);
-    }
+    .compare-table th:last-child { color: var(--cream); }
     .compare-table td {
       padding: 14px 16px;
       border-bottom: 1px solid var(--rule);
@@ -427,9 +437,7 @@
       font-weight: 400;
       width: 36%;
     }
-    .compare-table td:last-child {
-      color: var(--cream);
-    }
+    .compare-table td:last-child { color: var(--cream); }
     .compare-table td.highlight {
       color: var(--gold-lt);
       font-weight: 500;
@@ -496,7 +504,7 @@
       padding: 56px 48px;
       border-bottom: 1px solid var(--rule);
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       gap: 1px;
       background: var(--rule);
     }
@@ -570,24 +578,14 @@
       gap: 80px;
       align-items: start;
     }
-    .about-photo-placeholder {
+    .about-photo-frame { position: relative; }
+    .about-photo {
       width: 100%;
       aspect-ratio: 3/4;
-      background: var(--bg3);
+      object-fit: cover;
+      object-position: center top;
+      display: block;
       border: 1px solid var(--rule);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      overflow: hidden;
-    }
-    .about-photo-placeholder::after {
-      content: 'Photo';
-      font-family: var(--serif);
-      font-size: 13px;
-      letter-spacing: .15em;
-      text-transform: uppercase;
-      color: var(--cream-xs);
     }
     .about-photo-accent {
       position: absolute;
@@ -629,34 +627,6 @@
       font-weight: 400;
       text-align: right;
     }
-
-    /* STATES */
-    .states-row {
-      padding: 36px 48px;
-      border-bottom: 1px solid var(--rule);
-      display: flex;
-      align-items: center;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-    .states-label {
-      font-size: 10px;
-      letter-spacing: .22em;
-      text-transform: uppercase;
-      color: var(--cream-dim);
-      flex-shrink: 0;
-      margin-right: 8px;
-    }
-    .state-tag {
-      font-size: 11px;
-      letter-spacing: .12em;
-      color: var(--cream-dim);
-      padding: 5px 14px;
-      border: 1px solid var(--rule);
-      border-radius: 2px;
-      transition: border-color .2s, color .2s;
-    }
-    .state-tag:hover { border-color: var(--gold); color: var(--gold); }
 
     /* FINAL CTA */
     .final-cta {
@@ -769,9 +739,8 @@
       .problems-grid { grid-template-columns: 1fr; }
       .process-layout { grid-template-columns: 1fr; gap: 48px; }
       .process-aside { position: static; }
-      .stats { grid-template-columns: repeat(2, 1fr); }
+      .stats { grid-template-columns: 1fr; }
       .about-layout { grid-template-columns: 1fr; gap: 48px; }
-      .states-row { padding: 24px; }
       .final-cta { padding: 80px 24px; }
       footer { padding: 28px 24px; flex-direction: column; align-items: flex-start; }
       .footer-right { text-align: left; }
@@ -805,7 +774,7 @@
     <div class="hero-bg"></div>
     <div class="hero-line"></div>
     <div class="hero-content">
-      <p class="hero-eyebrow">Mortgage Strategy for Legal Professionals · Powered by Michelle Willer and Flat Branch Home Loans</p>
+      <p class="hero-eyebrow">Powered by Michelle Willer and Flat Branch Home Loans</p>
       <h1>The mortgage<br>built for<br><em>attorneys.</em></h1>
       <p class="hero-sub">Complex income. Law school debt. Partner draws. These are not obstacles. They are structuring questions. Get the financing strategy your career demands.</p>
       <div class="hero-btns">
@@ -821,8 +790,8 @@
     <div class="hook-bar"></div>
     <p class="hook-text">
       Most lenders go back to clients five times for documents. Each round costs days of delay and hours of non-billable time.<br><br>
-      This practice requests everything upfront, complete, on day one.<br><br>
-      <strong>For attorneys who move fast, approval in as little as one week.</strong>
+      We request everything upfront, complete, on day one.<br><br>
+      <strong>While other lenders are still waiting for their first underwriting review, your file is already complete.</strong>
     </p>
   </div>
 
@@ -830,7 +799,7 @@
   <section class="section" id="challenges">
     <p class="section-label">Why attorneys need a different approach</p>
     <h2 class="section-headline reveal">Your financial profile does not fit<br>a standard mortgage checklist.</h2>
-    <p class="section-sub reveal">Law school debt, partner draws, K-1 income, and variable compensation require a lender who understands how legal professionals actually earn. Most do not. This practice does.</p>
+    <p class="section-sub reveal">Law school debt, partner draws, K-1 income, and variable compensation require a lender who understands how legal professionals actually earn. Most do not. We do.</p>
     <div class="problems-grid">
       <div class="problem-card reveal">
         <div class="problem-num">01</div>
@@ -864,16 +833,16 @@
         <p class="section-sub reveal" style="margin-bottom:24px;">Most lenders go back to clients five times for additional documents. Each callback costs days of delay and hours of non-billable time.</p>
         <p class="about-body reveal">The typical mortgage process works like this: a lender collects what they think they need, submits to underwriting, then waits for the underwriter to flag problems. By the time anyone takes a real look at the file, a week is already gone. Then they come back to you. Then again. Then again, up to five times before the file is complete.</p>
         <p class="about-body reveal">Each callback means locating documents, context-switching away from client work, and waiting another few days while the file sits in a queue. Across five rounds, that is 5 to 10 hours of interrupted, non-billable time spent on a process that had nothing to do with practicing law.</p>
-        <p class="about-body reveal">This practice works differently. Every document is identified and requested upfront, before the file goes anywhere. The list is complete on day one. No unexpected callbacks. No reactive scrambles. No delays caused by a lender who did not prepare in advance.</p>
-        <p class="about-body reveal">For clients who respond promptly, full approval is achievable in as little as one week.</p>
+        <p class="about-body reveal">We work differently. Every document is identified and requested upfront, before the file goes anywhere. The list is complete on day one. No unexpected callbacks. No reactive scrambles. No delays caused by a lender who did not prepare in advance.</p>
+        <p class="about-body reveal">For clients who respond promptly, a clear to close is achievable in as little as one week.</p>
         <div class="billable-callout reveal">
           <div class="billable-num">5&ndash;10</div>
           <div class="billable-num-label">hours recovered from a reactive lender process</div>
           <div class="billable-rate">Multiply by your hourly rate.<br>That is what preparation is worth.</div>
         </div>
       </div>
-      <div class="reveal" style="margin-top: 8px;">
-        <p class="section-label" style="margin-bottom:24px;">ESQ Home Loans vs. the typical lender</p>
+      <div class="compare-wrap reveal">
+        <p class="compare-title">ESQ Home Loans vs. the Typical Lender</p>
         <table class="compare-table">
           <thead>
             <tr>
@@ -899,7 +868,7 @@
               <td class="highlight">Minimal</td>
             </tr>
             <tr>
-              <td>Approval timeline</td>
+              <td>Clear to Close</td>
               <td>3 to 4 weeks</td>
               <td class="highlight">As little as 1 week</td>
             </tr>
@@ -925,7 +894,7 @@
       <div>
         <p class="section-label">How it works</p>
         <h2 class="section-headline reveal">A mortgage process designed around your schedule, your income, and your financial goals.</h2>
-        <p class="section-sub reveal">Every transaction starts with a strategy conversation after the application is received. The goal is a loan that fits the full financial picture to build wealth, coordinated with your CPA and wealth advisor from the start.</p>
+        <p class="section-sub reveal">Every transaction starts with a strategy conversation after we receive your application. The goal is a loan that fits the full financial picture to build your wealth, coordinated with your CPA and wealth advisor from the start.</p>
         <div class="process-steps">
           <div class="process-step reveal">
             <div class="step-num">01</div>
@@ -959,7 +928,7 @@
       </div>
       <div class="process-aside reveal">
         <p class="aside-headline">The conversation starts here.</p>
-        <p class="aside-body">A short application is all it takes. Attorneys across eight states have financed homes up to $3M through this practice, without the frustration of lenders who did not understand their income.</p>
+        <p class="aside-body">A short application is all it takes. Start today and we will be in touch within one business day.</p>
         <a href="https://home.fbhl.com/signup/michelle.willer/D3RUKIVECCMA3ILN1C5G" class="btn-primary" target="_blank" rel="noopener" style="display:block;text-align:center;margin-bottom:12px;">Start Your Application</a>
         <a href="https://calendly.com/michellewiller" class="btn-ghost" target="_blank" rel="noopener" style="display:block;text-align:center;">Schedule a Call</a>
       </div>
@@ -976,10 +945,6 @@
       <div class="stat-num">4.92<span>&#9733;</span></div>
       <div class="stat-label">Star Rating</div>
       <a href="https://www.experience.com/reviews/michelle-willer-383738" class="stat-link" target="_blank" rel="noopener">379 Verified Reviews</a>
-    </div>
-    <div class="stat reveal">
-      <div class="stat-num">8</div>
-      <div class="stat-label">States Licensed</div>
     </div>
     <div class="stat reveal">
       <div class="stat-num">$3<span>M</span></div>
@@ -1000,15 +965,15 @@
   <section class="section" id="about">
     <p class="section-label">About</p>
     <div class="about-layout">
-      <div class="reveal" style="position:relative;">
-        <div class="about-photo-placeholder"></div>
+      <div class="about-photo-frame reveal">
+        <img src="michelle-willer.png" alt="Michelle Willer, Senior Mortgage Banker specializing in attorney home loans" class="about-photo" />
         <div class="about-photo-accent"></div>
       </div>
       <div>
         <h2 class="section-headline reveal">20+ years. Built around the way<br><em>legal professionals earn.</em></h2>
         <p class="about-body reveal">Attorneys, partners, and legal professionals have financial profiles that do not always fit neatly into standard underwriting boxes. After two decades of originating mortgages for high-income professionals and attorneys specifically, the documentation patterns, income structures, and qualification challenges that trip up other lenders are well-understood here.</p>
         <p class="about-body reveal">Every transaction is approached as one piece of a larger financial strategy. That means coordinating with your CPA, wealth advisor, and financial team. The goal is a mortgage that fits your plan, not just the checklist.</p>
-        <p class="about-body reveal">Straight answers. Clear tradeoffs. No surprises at closing. That is the standard every attorney client should expect, and what this practice delivers.</p>
+        <p class="about-body reveal">Straight answers. Clear tradeoffs. No surprises at closing. That is the standard every attorney client should expect, and what we deliver.</p>
         <div class="about-detail reveal">
           <div class="about-detail-row">
             <span class="about-detail-label">Advisor</span>
@@ -1039,19 +1004,6 @@
     </div>
   </section>
 
-  <!-- STATES -->
-  <div class="states-row reveal">
-    <span class="states-label">Licensed in</span>
-    <span class="state-tag">AZ</span>
-    <span class="state-tag">FL</span>
-    <span class="state-tag">MO</span>
-    <span class="state-tag">IL</span>
-    <span class="state-tag">TX</span>
-    <span class="state-tag">NC</span>
-    <span class="state-tag">SC</span>
-    <span class="state-tag">TN</span>
-  </div>
-
   <!-- FINAL CTA -->
   <section class="final-cta">
     <div class="final-cta-bg"></div>
@@ -1075,7 +1027,6 @@
       Flat Branch Home Loans · NMLS 224149 · Equal Housing Lender
     </div>
     <div class="footer-right">
-      AZ · FL · MO · IL · TX · NC · SC · TN<br>
       (314) 496-1478<br>
       esqhomeloans.com
     </div>
