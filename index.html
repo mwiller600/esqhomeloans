@@ -572,30 +572,27 @@
     }
 
     /* ABOUT */
-    .about-layout {
-      display: grid;
-      grid-template-columns: 1fr 1.2fr;
-      gap: 80px;
-      align-items: start;
-    }
-    .about-photo-frame { position: relative; }
-    .about-photo {
-      width: 100%;
-      aspect-ratio: 3/4;
-      object-fit: cover;
-      object-position: center top;
-      display: block;
-      border: 1px solid var(--rule);
-    }
-    .about-photo-accent {
-      position: absolute;
-      bottom: -16px;
-      right: -16px;
-      width: 60%;
-      height: 60%;
-      border: 1px solid rgba(200,146,42,.2);
-      pointer-events: none;
-    }
+.about-layout {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 48px;
+  align-items: start;
+}
+.about-photo-frame {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 8px;
+}
+.about-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  border: 2px solid rgba(200,146,42,.4);
+}
     .about-body {
       font-size: 14px;
       line-height: 1.85;
@@ -855,7 +852,7 @@
             <tr>
               <td>Document callbacks</td>
               <td>Up to 5 rounds</td>
-              <td class="highlight">Zero unexpected requests</td>
+              <td class="highlight">Requests handled upfront</td>
             </tr>
             <tr>
               <td>Time to first review</td>
@@ -966,9 +963,8 @@
     <p class="section-label">About</p>
     <div class="about-layout">
       <div class="about-photo-frame reveal">
-        <img src="michelle-willer.png" alt="Michelle Willer, Senior Mortgage Banker specializing in attorney home loans" class="about-photo" />
-        <div class="about-photo-accent"></div>
-      </div>
+  <img src="michelle-willer.png" alt="Michelle Willer, Senior Mortgage Banker specializing in attorney home loans" class="about-photo" />
+</div>
       <div>
         <h2 class="section-headline reveal">20+ years. Built around the way<br><em>legal professionals earn.</em></h2>
         <p class="about-body reveal">Attorneys, partners, and legal professionals have financial profiles that do not always fit neatly into standard underwriting boxes. After two decades of originating mortgages for high-income professionals and attorneys specifically, the documentation patterns, income structures, and qualification challenges that trip up other lenders are well-understood here.</p>
