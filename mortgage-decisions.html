@@ -1,0 +1,1121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Attorney Mortgage Decisions | ESQ Home Loans</title>
+  <meta name="description" content="Eleven mortgage decisions every attorney and legal professional should think through before buying, refinancing, or making an offer. Strategy guidance from Michelle Willer, Flat Branch Home Loans." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg:        #080808;
+      --bg2:       #0f0f0f;
+      --bg3:       #141414;
+      --gold:      #c8922a;
+      --gold-lt:   #e0b060;
+      --cream:     #f0ead8;
+      --cream-dim: rgba(240,234,216,0.55);
+      --cream-xs:  rgba(240,234,216,0.18);
+      --rule:      rgba(240,234,216,0.1);
+      --serif:     'Cormorant Garamond', Georgia, serif;
+      --sans:      'Outfit', sans-serif;
+      --ease:      cubic-bezier(.4,0,.2,1);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; background: #080808; }
+    body {
+      background: var(--bg);
+      color: var(--cream);
+      font-family: var(--sans);
+      font-weight: 300;
+      line-height: 1.6;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      min-height: 100vh;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 9999;
+      opacity: .5;
+    }
+
+    /* NAV */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 22px 48px;
+      border-bottom: 1px solid transparent;
+      transition: background .4s var(--ease), border-color .4s var(--ease), padding .3s var(--ease);
+      background: rgba(8,8,8,.92);
+      backdrop-filter: blur(12px);
+      border-color: var(--rule);
+    }
+    nav.scrolled { padding: 16px 48px; }
+    .nav-logo { display: flex; align-items: center; gap: 20px; cursor: pointer; }
+    .nav-logo-esq-col { display: flex; flex-direction: column; align-items: center; gap: 5px; }
+    .nav-logo-rule { width: 1px; height: 32px; background: rgba(240,234,216,0.15); }
+    .nav-logo-fb { height: 38px; width: auto; opacity: 0.85; }
+    .nav-logo-esq-wrap { position: relative; padding-bottom: 5px; }
+    .nav-logo-esq { font-family: var(--serif); font-size: 22px; font-weight: 400; letter-spacing: .18em; color: var(--cream); line-height: 1; display: block; }
+    .nav-logo-line { position: absolute; bottom: 0; left: 0; right: 0; height: 1.5px; background: linear-gradient(90deg, transparent, var(--gold), transparent); }
+    .nav-logo-sub { font-family: var(--sans); font-size: 8px; font-weight: 600; letter-spacing: .38em; text-transform: uppercase; color: #ffffff; line-height: 1; }
+    .nav-links { display: flex; gap: 36px; list-style: none; }
+    .nav-links a { font-size: 11px; letter-spacing: .18em; text-transform: uppercase; color: var(--cream-dim); transition: color .2s; }
+    .nav-links a:hover { color: var(--cream); }
+    .nav-cta {
+      font-size: 11px; letter-spacing: .14em; text-transform: uppercase;
+      background: var(--gold); color: #080808; padding: 10px 22px;
+      font-weight: 600; border-radius: 2px; transition: background .2s;
+    }
+    .nav-cta:hover { background: var(--gold-lt); }
+
+    .btn-primary {
+      display: inline-block; background: var(--gold); color: #080808;
+      font-family: var(--sans); font-size: 12px; font-weight: 600; letter-spacing: .14em;
+      text-transform: uppercase; padding: 16px 36px; border-radius: 2px; border: none;
+      cursor: pointer; transition: background .2s, transform .15s;
+    }
+    .btn-primary:hover { background: var(--gold-lt); transform: translateY(-1px); }
+    .btn-ghost {
+      display: inline-block; background: transparent; color: var(--cream);
+      font-family: var(--sans); font-size: 12px; font-weight: 400; letter-spacing: .14em;
+      text-transform: uppercase; padding: 15px 36px; border-radius: 2px;
+      border: 1px solid rgba(240,234,216,.4); cursor: pointer;
+      transition: border-color .2s, color .2s, transform .15s;
+    }
+    .btn-ghost:hover { border-color: var(--cream); transform: translateY(-1px); }
+    .btn-small { padding: 12px 26px; font-size: 11px; }
+
+    /* PAGE HERO */
+    .page-hero {
+      padding: 168px 48px 36px;
+      position: relative;
+      overflow: hidden;
+      border-bottom: 1px solid var(--rule);
+    }
+    .page-hero-bg {
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse 60% 50% at 80% 10%, rgba(200,146,42,.07) 0%, transparent 70%),
+        linear-gradient(180deg, #080808 0%, #0a0907 100%);
+    }
+    .page-hero-content { position: relative; z-index: 2; max-width: 760px; }
+    .hero-eyebrow {
+      font-size: 11px; letter-spacing: .2em; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 28px;
+    }
+    .page-hero h1 {
+      font-family: var(--serif); font-size: clamp(40px, 6vw, 64px); font-weight: 300;
+      line-height: 1.08; color: var(--cream); margin-bottom: 24px;
+    }
+    .page-hero-sub {
+      font-size: 16px; line-height: 1.75; color: var(--cream-dim);
+      max-width: 560px; margin-bottom: 40px;
+    }
+    .page-hero-btns { display: flex; gap: 16px; flex-wrap: wrap; }
+
+    /* INTRO */
+    .intro {
+      padding: 32px 48px;
+      border-bottom: 1px solid var(--rule);
+      display: flex; gap: 48px; align-items: flex-start;
+    }
+    .intro-bar { width: 2px; height: 56px; background: linear-gradient(180deg, var(--gold), transparent); flex-shrink: 0; margin-top: 6px; }
+    .intro-text { font-family: var(--serif); font-size: clamp(19px, 2.1vw, 24px); font-weight: 300; line-height: 1.45; color: rgba(240,234,216,.8); max-width: 760px; }
+    .intro-text strong { font-weight: 500; color: var(--cream); }
+    .intro-text p { margin-bottom: 14px; }
+    .intro-text p:last-child { margin-bottom: 0; }
+
+    /* GUIDES SECTION */
+    .guides-section { padding: 48px 48px 96px; border-bottom: 1px solid var(--rule); }
+    .section-label { font-size: 10px; letter-spacing: .28em; text-transform: uppercase; color: var(--gold); margin-bottom: 14px; }
+    .guides-headline { font-family: var(--serif); font-size: clamp(28px, 3.4vw, 42px); font-weight: 300; line-height: 1.2; color: var(--cream); margin-bottom: 32px; max-width: 700px; }
+
+    .guide-list { max-width: 880px; }
+    .guide-item { border-top: 1px solid var(--rule); }
+    .guide-item:last-child { border-bottom: 1px solid var(--rule); }
+    .guide-header {
+      width: 100%; display: flex; align-items: center; gap: 24px;
+      background: none; border: none; cursor: pointer; text-align: left;
+      padding: 26px 0; color: var(--cream); font-family: var(--sans);
+    }
+    .guide-num { font-family: var(--serif); font-size: 16px; color: var(--gold); width: 28px; flex-shrink: 0; }
+    .guide-title-text { font-size: 16px; font-weight: 400; line-height: 1.4; flex: 1; color: var(--cream); }
+    .guide-icon { width: 18px; height: 18px; flex-shrink: 0; position: relative; }
+    .guide-icon::before, .guide-icon::after {
+      content: ''; position: absolute; background: var(--gold);
+      top: 50%; left: 50%; transform: translate(-50%, -50%);
+    }
+    .guide-icon::before { width: 14px; height: 1.5px; }
+    .guide-icon::after { width: 1.5px; height: 14px; transition: transform .3s var(--ease); }
+    .guide-item.open .guide-icon::after { transform: translate(-50%, -50%) rotate(90deg); opacity: 0; }
+    .guide-item.open .guide-title-text { color: var(--gold-lt); }
+
+    .guide-panel { max-height: 0; overflow: hidden; transition: max-height .5s var(--ease); }
+    .guide-item.open .guide-panel { max-height: 6000px; transition: max-height .8s var(--ease); }
+    .guide-panel-inner { padding: 4px 0 40px 52px; }
+
+    .guide-subhead {
+      font-size: 11px; letter-spacing: .16em; text-transform: uppercase;
+      color: var(--gold); margin-top: 26px; margin-bottom: 8px;
+    }
+    .guide-panel-inner > .guide-subhead:first-child { margin-top: 0; }
+    .guide-panel-inner p {
+      font-size: 14px; line-height: 1.6; color: var(--cream-dim); margin-bottom: 4px; max-width: 680px;
+    }
+    .guide-panel-inner p strong { color: var(--cream); font-weight: 500; }
+
+    .guide-list-q { list-style: none; margin: 2px 0 10px 0; padding: 0; max-width: 680px; }
+    .guide-list-q li {
+      font-size: 14px; line-height: 1.55; color: var(--cream-dim);
+      padding: 4px 0 4px 18px; position: relative;
+    }
+    .guide-list-q li::before {
+      content: ''; position: absolute; left: 0; top: 13px;
+      width: 5px; height: 5px; background: var(--gold); border-radius: 50%;
+    }
+
+    .guide-cta-links {
+      margin-top: 16px !important;
+      display: flex; gap: 0; align-items: center; flex-wrap: wrap;
+    }
+    .guide-cta-links a {
+      font-size: 14px; color: var(--gold-lt); border-bottom: 1px solid rgba(200,146,42,.35);
+      transition: border-color .2s, color .2s;
+    }
+    .guide-cta-links a:hover { color: var(--gold); border-color: var(--gold); }
+    .guide-cta-links .cta-sep { color: var(--cream-xs); margin: 0 14px; font-size: 14px; }
+
+    .guide-collapse {
+      display: inline-block; margin-top: 28px; background: none; border: none; cursor: pointer;
+      font-family: var(--sans); font-size: 11px; letter-spacing: .14em; text-transform: uppercase;
+      color: var(--cream-dim); padding: 0; transition: color .2s;
+    }
+    .guide-collapse:hover { color: var(--gold-lt); }
+
+    /* BOTTOM CTA (reuse final-cta style) */
+    .final-cta { padding: 120px 48px; text-align: center; position: relative; overflow: hidden; }
+    .final-cta-bg { position: absolute; inset: 0; background: radial-gradient(ellipse 60% 80% at 50% 50%, rgba(200,146,42,.06) 0%, transparent 70%); }
+    .final-cta-content { position: relative; z-index: 2; }
+    .final-cta h2 { font-family: var(--serif); font-size: clamp(36px, 5vw, 64px); font-weight: 300; color: var(--cream); line-height: 1.15; margin-bottom: 16px; }
+    .final-cta h2 em { font-style: italic; color: var(--gold-lt); }
+    .final-cta p { font-size: 15px; color: var(--cream-dim); margin-bottom: 48px; max-width: 480px; margin-left: auto; margin-right: auto; }
+    .final-cta-btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+    /* FOOTER */
+    footer { padding: 36px 48px; border-top: 1px solid var(--rule); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+    .footer-left { font-size: 11px; color: rgba(240,234,216,.85); line-height: 1.9; }
+    .footer-right { font-size: 11px; color: rgba(240,234,216,.85); text-align: right; line-height: 1.9; }
+    .footer-logo-esq { color: rgba(200,146,42,.9); font-family: var(--serif); font-size: 15px; letter-spacing: .1em; }
+    .footer-logo-line { display: block; height: 1px; background: linear-gradient(90deg,transparent,rgba(200,146,42,.3),transparent); margin: 3px 0; }
+    .footer-logo-sub { display: block; font-family: var(--sans); font-size: 7px; font-weight: 600; letter-spacing: .3em; color: rgba(255,255,255,.6); text-transform: uppercase; margin-bottom: 10px; }
+
+    /* BACK TO TOP */
+    .back-to-top {
+      position: fixed; bottom: 36px; right: 36px; width: 44px; height: 44px;
+      background: var(--gold); color: #080808; border: none; border-radius: 2px; cursor: pointer;
+      display: flex; align-items: center; justify-content: center; opacity: 0; pointer-events: none;
+      transition: opacity .3s var(--ease), background .2s, transform .2s; z-index: 98;
+    }
+    .back-to-top.visible { opacity: 1; pointer-events: all; }
+    .back-to-top:hover { background: var(--gold-lt); transform: translateY(-2px); }
+    .back-to-top svg { width: 16px; height: 16px; }
+
+    .reveal { opacity: 0; transform: translateY(20px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
+    .reveal.visible { opacity: 1; transform: none; }
+
+    /* MOBILE */
+    @media (max-width: 768px) {
+      nav { padding: 18px 24px; }
+      nav.scrolled { padding: 14px 24px; }
+      .nav-links { display: none; }
+      .page-hero { padding: 140px 24px 28px; }
+      .intro { padding: 24px 24px; flex-direction: column; gap: 16px; }
+      .guides-section { padding: 32px 24px 56px; }
+      .guide-panel-inner { padding: 4px 0 36px 0; }
+      .guide-header { gap: 14px; }
+      .final-cta { padding: 80px 24px; }
+      footer { padding: 28px 24px; flex-direction: column; align-items: flex-start; }
+      .footer-right { text-align: left; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-esq-col">
+        <div class="nav-logo-esq-wrap">
+          <span class="nav-logo-esq">ESQ</span>
+          <div class="nav-logo-line"></div>
+        </div>
+        <span class="nav-logo-sub">Home Loans</span>
+      </div>
+      <div class="nav-logo-rule"></div>
+      <img src="ESQ FBHL.png" alt="Flat Branch Home Loans" class="nav-logo-fb" />
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html#challenges">Challenges</a></li>
+      <li><a href="index.html#process">Process</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="mortgage-decisions.html">Mortgage Decisions</a></li>
+    </ul>
+    <a href="https://home.fbhl.com/signup/michelle.willer/D3RUKIVECCMA3ILN1C5G" class="nav-cta" target="_blank" rel="noopener">Apply Now</a>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-bg"></div>
+    <div class="page-hero-content">
+      <p class="hero-eyebrow">Attorney Mortgage Decisions</p>
+      <h1>Before you buy, let&#8217;s talk<br>through what <em style="font-style:italic;color:var(--gold-lt);">matters most.</em></h1>
+      <p class="page-hero-sub">Your income, your cash, your loan structure, your timing, and your long-term goals. Eleven decisions worth thinking through before you buy, refinance, or make an offer.</p>
+      <div class="page-hero-btns">
+        <a href="https://calendly.com/michellewiller" class="btn-primary" target="_blank" rel="noopener">Schedule a Mortgage Strategy Call</a>
+        <a href="https://home.fbhl.com/signup/michelle.willer/D3RUKIVECCMA3ILN1C5G" class="btn-ghost" target="_blank" rel="noopener">Start Application</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <div class="intro reveal">
+    <div class="intro-bar"></div>
+    <div class="intro-text">
+      <p>Most mortgage mistakes do not happen because someone picked the wrong rate.</p>
+      <p><strong>They happen because the process started with the wrong question.</strong></p>
+      <p>The guides below walk through the questions worth answering first, before rate, before paperwork, before an offer goes in.</p>
+    </div>
+  </div>
+
+  <!-- GUIDES -->
+  <section class="guides-section" id="guides">
+    <p class="section-label">The Mortgage Decisions Library</p>
+    <h2 class="guides-headline reveal">Eleven conversations worth having before you sign anything.</h2>
+
+    <div class="guide-list">
+
+      <div class="guide-item" data-guide="1">
+        <button class="guide-header" aria-expanded="false">
+          <span class="guide-num">01</span>
+          <span class="guide-title-text">Before We Talk About Interest Rates, Let’s Make Sure We’re Solving the Right Problem</span>
+          <span class="guide-icon"></span>
+        </button>
+        <div class="guide-panel">
+          <div class="guide-panel-inner">
+          <p>Most people think the mortgage process starts with a rate.</p>
+          <p>It doesn’t.</p>
+          <p>At least, it shouldn’t.</p>
+          <p>When someone calls me about buying a home or refinancing, the first thing I want to know is simple:</p>
+          <p>What are you trying to accomplish?</p>
+          <p>Are you buying a new home? Are you refinancing? Do you need to sell another home first? Are you just getting started? Do you already have a house in mind? Do you know what monthly payment feels comfortable?</p>
+          <p>Before we talk about loan options, I want to understand the goal.</p>
+          <p>Because the right mortgage decision depends on much more than the interest rate.</p>
+          <h4 class="guide-subhead">The Questions I Ask First</h4>
+          <ul class="guide-list-q">
+          <li>Are you buying or refinancing?</li>
+          <li>Do you already have a house picked out?</li>
+          <li>What areas or neighborhoods are you considering?</li>
+          <li>Do you need to sell another home first?</li>
+          <li>Do you have a monthly payment in mind?</li>
+          <li>How much money do you want to use for the down payment?</li>
+          <li>How much money do you want to keep after closing?</li>
+          <li>What other expenses do we need to think about?</li>
+          <li>How is your income set up?</li>
+          <li>Do you have checking, savings, investment, or retirement accounts?</li>
+          </ul>
+          <h4 class="guide-subhead">Why Monthly Payment Still Matters</h4>
+          <p>Some clients make strong income and tell me the monthly payment is not a big deal.</p>
+          <p>I still ask about it.</p>
+          <p>Not because I think they cannot afford the home.</p>
+          <p>Because the monthly payment helps us understand how the mortgage fits into the rest of their life.</p>
+          <p>A payment may look fine on paper. But we also need to think about other debt, private school, daycare, car payments, future renovations, retirement goals, savings after closing, and future career changes.</p>
+          <p>The goal is not just to get approved. The goal is to make a smart decision before you buy.</p>
+          <h4 class="guide-subhead">The Goal Is to Make the Process Easier, Not Harder</h4>
+          <p>Once I understand what someone is trying to do, I start looking for the cleanest way to set up the loan.</p>
+          <p>That does not always mean collecting every single document they have.</p>
+          <p>For example, if someone has checking accounts, savings accounts, investment accounts, and retirement accounts, but they only need a small amount for the down payment, we may not need to include every account.</p>
+          <p>If we do not need the retirement accounts, we may leave them out.</p>
+          <p>Why? Because less paperwork can mean a cleaner process. A cleaner process can mean fewer delays. And fewer delays can make the entire mortgage experience easier.</p>
+          <h4 class="guide-subhead">A Real Example</h4>
+          <p>I recently worked with clients who had enough money to purchase the home with cash but wanted to get a loan for their investments to grow and last them longer in retirement.</p>
+          <p>They had already talked with another lender, but the process was becoming more complicated than it needed to be.</p>
+          <p>After a 5 minute conversation, I learned how their income and assets were set up.</p>
+          <p>Instead of making them chase a long list of documents, we looked at whether their assets could help simplify the qualification process.</p>
+          <p>In that case, we were able to use investment statements as their income documents instead of making the income side more complicated with their tax returns.</p>
+          <p>The loan was not easier because the clients were simple. The loan was easier because we asked better questions first.</p>
+          <h4 class="guide-subhead">What Most People Miss</h4>
+          <p>A lot of buyers start with: “What is the rate?”</p>
+          <p>That is not a bad question. It is just not the first question.</p>
+          <p>A better place to start is: What are we trying to solve?</p>
+          <p>Are we trying to lower the payment? Keep more cash? Buy before selling? Avoid unnecessary paperwork? Plan around future income? Protect flexibility after closing?</p>
+          <p>Once we know that, the mortgage decision becomes much clearer.</p>
+          <h4 class="guide-subhead">Key Takeaway</h4>
+          <p>The smartest mortgage decision does not start with the rate.</p>
+          <p>It starts with the right questions.</p>
+          <p>Before you buy, talk through the full picture. That is how we figure out the loan structure that fits your life, your money, and your future plans.</p>
+          <p>Before you apply, let’s make sure we are solving the right problem.</p>
+          <p>Schedule a Mortgage Strategy Call with Michelle.</p>
+          <p class="guide-cta-links"><a href="https://calendly.com/michellewiller" target="_blank" rel="noopener">Schedule a Mortgage Strategy Call</a><span class="cta-sep">&middot;</span><a href="https://home.fbhl.com/signup/michelle.willer/D3RUKIVECCMA3ILN1C5G" target="_blank" rel="noopener">Start Application</a></p>
+          <button class="guide-collapse" type="button">Collapse &#8593;</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="guide-item" data-guide="2">
+        <button class="guide-header" aria-expanded="false">
+          <span class="guide-num">02</span>
+          <span class="guide-title-text">Should You Really Put 20% Down?</span>
+          <span class="guide-icon"></span>
+        </button>
+        <div class="guide-panel">
+          <div class="guide-panel-inner">
+          <p>Most people think putting 20% down is automatically the smartest decision.</p>
+          <p>Sometimes it is. Sometimes it isn't.</p>
+          <p>The truth is, the right down payment depends on much more than avoiding mortgage insurance.</p>
+          <p>Before we decide how much you should put down, I like to talk through a few questions.</p>
+          <p>Because once you put money into your home, getting it back isn't always easy or inexpensive.</p>
+          <h4 class="guide-subhead">Before We Answer That</h4>
+          <ul class="guide-list-q">
+          <li>Where is the money coming from?</li>
+          <li>Will selling investments create capital gains taxes?</li>
+          <li>How much cash will you have left after closing?</li>
+          <li>Are you planning to remodel the home?</li>
+          <li>Do you still need to sell your current house?</li>
+          <li>Do you have other large expenses coming up?</li>
+          <li>Have you talked with your financial advisor?</li>
+          <li>Are you trying to lower your payment, avoid mortgage insurance, or simply put down 20% because you have always heard that is the right number?</li>
+          </ul>
+          <h4 class="guide-subhead">Why I Ask</h4>
+          <p>Many buyers have heard one piece of advice their entire life: “Put 20% down so you don't have to pay mortgage insurance.”</p>
+          <p>Sometimes that is great advice. Other times, it can cost you more money than it saves.</p>
+          <p>The goal is not to avoid mortgage insurance.</p>
+          <p>The goal is to put yourself in the strongest financial position after you buy the home.</p>
+          <p>That might mean putting 20% down. It might mean putting 10% down. Or it might mean something completely different.</p>
+          <p>Every situation deserves its own conversation.</p>
+          <h4 class="guide-subhead">A Real Client Story</h4>
+          <p>A client recently came to me convinced they needed to put 20% down.</p>
+          <p>They didn't want mortgage insurance because they felt it was “throwing money away.”</p>
+          <p>So instead of talking about loan programs, we talked through their entire financial picture.</p>
+          <p>I learned they still needed to sell their current home. To reach the full 20% down payment, they would also need to sell investments. That meant paying capital gains taxes.</p>
+          <p>After looking at several options, we realized something.</p>
+          <p>They had enough cash to comfortably put 10% down without touching their investments. Because they had excellent credit, their monthly mortgage insurance was surprisingly low.</p>
+          <p>Instead of paying capital gains taxes and tying up more cash in the house, they kept their investments intact, avoided unnecessary taxes, maintained a comfortable monthly payment, and preserved more financial flexibility.</p>
+          <p>The goal wasn't simply to avoid mortgage insurance. The goal was to make the smartest overall financial decision.</p>
+          <h4 class="guide-subhead">What We Talked Through</h4>
+          <p>Option 1: Put 20% down, sell investments, pay capital gains taxes, and avoid mortgage insurance.</p>
+          <p>Option 2: Put 10% down, keep investments, avoid capital gains taxes, accept a small monthly mortgage insurance payment, and preserve more cash after closing.</p>
+          <p>Once everything was on paper, the decision became much clearer.</p>
+          <h4 class="guide-subhead">Common Assumption</h4>
+          <p>Assumption: “Putting 20% down is always the smartest choice.”</p>
+          <p>Reality: Sometimes it is. Sometimes it isn't. The answer depends on taxes, investments, cash reserves, future plans, and the overall financial picture.</p>
+          <h4 class="guide-subhead">Key Takeaway</h4>
+          <p>The smartest down payment isn't always the biggest one.</p>
+          <p>It is the one that supports your overall financial picture - not just your mortgage.</p>
+          <p>If you are deciding how much to put down, let's look at the numbers together and compare the options before you commit to one approach.</p>
+          <p class="guide-cta-links"><a href="https://calendly.com/michellewiller" target="_blank" rel="noopener">Schedule a Mortgage Strategy Call</a><span class="cta-sep">&middot;</span><a href="https://home.fbhl.com/signup/michelle.willer/D3RUKIVECCMA3ILN1C5G" target="_blank" rel="noopener">Start Application</a></p>
+          <button class="guide-collapse" type="button">Collapse &#8593;</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="guide-item" data-guide="3">
+        <button class="guide-header" aria-expanded="false">
+          <span class="guide-num">03</span>
+          <span class="guide-title-text">My Income Is Complicated. Where Do We Start?</span>
+          <span class="guide-icon"></span>
+        </button>
+        <div class="guide-panel">
+          <div class="guide-panel-inner">
+          <p>One of the first things I hear is: “I don't know if I'll qualify because my income is complicated.”</p>
+          <p>My answer is almost always the same.</p>
+          <p>Let's talk it through.</p>
+          <p>Complicated income doesn't automatically mean getting a mortgage has to be complicated.</p>
+          <p>The first step is understanding how your income is actually set up.</p>
+          <p>Once we know that, we can usually identify the simplest path forward.</p>
+          <h4 class="guide-subhead">Before We Answer That</h4>
+          <ul class="guide-list-q">
+          <li>Where does your income come from?</li>
+          <li>Is it W-2 income?</li>
+          <li>Self-employed income?</li>
+          <li>Partnership or K-1 income?</li>
+          <li>Trust income?</li>
+          <li>Investment income?</li>
+          <li>Retirement income?</li>
+          <li>Commission?</li>
+          <li>Bonuses?</li>
+          <li>Tips?</li>
+          <li>Royalties?</li>
+          <li>What makes you think your income is complicated?</li>
+          </ul>
+          <h4 class="guide-subhead">Why I Ask</h4>
+          <p>Every income source is looked at a little differently.</p>
+          <p>The goal is not to collect every document you own.</p>
+          <p>The goal is to understand your situation first, then determine the simplest and strongest way to qualify.</p>
+          <p>Sometimes we use tax returns. Sometimes we don't have to. Sometimes assets make more sense. Sometimes trust income is the easiest path. Sometimes retirement income simplifies everything.</p>
+          <p>There isn't one answer. That is why we start with questions instead of paperwork.</p>
+          <h4 class="guide-subhead">A Real Client Story</h4>
+          <p>I recently spoke with a client who had substantial assets.</p>
+          <p>They had already talked with another lender. The lender started collecting documents and decided to let underwriting figure it out later.</p>
+          <p>After about five minutes of conversation, I learned something important.</p>
+          <p>The client wasn't living on traditional income. They simply transferred money from their investment accounts whenever they needed it.</p>
+          <p>Instead of making the file more complicated, we looked at another option.</p>
+          <p>We used their assets to qualify.</p>
+          <p>Instead of gathering stacks of tax returns and explaining years of income history, we were able to simplify the process with investment statements.</p>
+          <p>The mortgage didn't become easier because the client changed. It became easier because we looked at the situation differently.</p>
+          <h4 class="guide-subhead">Another Option People Do Not Always Think About</h4>
+          <p>Sometimes the answer is not changing the loan. It is changing who is on the loan.</p>
+          <p>If someone is early in their career, recently started a business, or does not yet qualify on their own, a trusted family member may be able to co-sign.</p>
+          <p>That is not the right solution for everyone.</p>
+          <p>A co-signer is taking on real responsibility, and late payments affect both borrowers' credit.</p>
+          <p>But sometimes it is worth discussing because it opens another path that many people do not realize exists.</p>
+          <p>The important part is understanding all of your options before deciding.</p>
+          <h4 class="guide-subhead">Michelle’s Thought Process</h4>
+          <p>When someone tells me their income is complicated, I am not looking for ways to make the file work harder.</p>
+          <p>I am looking for ways to make the process simpler.</p>
+          <p>If we don't need tax returns, I don't want to ask for them. If we don't need retirement statements, let's leave them out.</p>
+          <p>The less unnecessary paperwork we collect, the easier the process usually becomes - for you and for underwriting.</p>
+          <h4 class="guide-subhead">Common Assumption</h4>
+          <p>Assumption: “My income is too complicated to qualify.”</p>
+          <p>Reality: Not necessarily. The question is not whether your income is complicated. The question is: What is the smartest way to present it?</p>
+          <h4 class="guide-subhead">Key Takeaway</h4>
+          <p>Complicated income does not always require a complicated mortgage process.</p>
+          <p>The goal is to understand your income, your assets, and your options first. From there, we can build the strategy that makes the most sense for your situation.</p>
+          <p>If you have been told your income is too complicated, or you are worried your situation is different from everyone else's, let's talk through it. There may be more options than you realize.</p>
+          <p class="guide-cta-links"><a href="https://calendly.com/michellewiller" target="_blank" rel="noopener">Schedule a Mortgage Strategy Call</a><span class="cta-sep">&middot;</span><a href="https://home.fbhl.com/signup/michelle.willer/D3RUKIVECCMA3ILN1C5G" target="_blank" rel="noopener">Start Application</a></p>
+          <button class="guide-collapse" type="button">Collapse &#8593;</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="guide-item" data-guide="4">
+        <button class="guide-header" aria-expanded="false">
+          <span class="guide-num">04</span>
+          <span class="guide-title-text">Should You Buy Your Next Home Before You Sell Your Current One?</span>
+          <span class="guide-icon"></span>
+        </button>
+        <div class="guide-panel">
+          <div class="guide-panel-inner">
+          <p>This is one of the biggest decisions you will make during the home buying process.</p>
+          <p>Some people should buy first. Some people should sell first. Some people have more than one option.</p>
+          <p>The right answer depends on your finances, your comfort level, and your overall plan.</p>
+          <p>Before we talk about bridge loans or loan programs, let's talk it through.</p>
+          <h4 class="guide-subhead">Before We Answer That</h4>
+          <ul class="guide-list-q">
+          <li>Could you comfortably make two mortgage payments for a few months?</li>
+          <li>What if your current home does not sell as quickly as you expect?</li>
+          <li>How much cash do you have available today?</li>
+          <li>Do you already have enough money for a down payment?</li>
+          <li>Would you need a gift from family?</li>
+          <li>Would you need to use investments?</li>
+          <li>Would a bridge loan make sense?</li>
+          <li>How comfortable are you with financial risk?</li>
+          </ul>
+          <h4 class="guide-subhead">Why I Ask</h4>
+          <p>Many people assume they will sell their current home in 30 days.</p>
+          <p>Sometimes they do. Sometimes they don't.</p>
+          <p>The question is not: “Can you buy before you sell?”</p>
+          <p>The better question is: What happens if your current home takes longer to sell?</p>
+          <p>If making two mortgage payments for a few months would create financial stress, we need to know that before you write an offer on your next home.</p>
+          <p>Planning for the “what if” usually leads to better decisions.</p>
+          <h4 class="guide-subhead">A Real Client Conversation</h4>
+          <p>A client recently wanted to buy their next home before selling their current one.</p>
+          <p>At first, it sounded like a simple plan.</p>
+          <p>Instead of jumping into financing options, we talked through a few questions.</p>
+          <p>Could they comfortably afford two mortgage payments? How much cash would they have after closing? What if their current home stayed on the market longer than expected? Would they need a bridge loan?</p>
+          <p>As we talked through each option, they realized the biggest concern was not qualifying for the loan.</p>
+          <p>It was protecting their financial flexibility while they owned two homes.</p>
+          <p>Once we understood that, choosing the right strategy became much easier.</p>
+          <h4 class="guide-subhead">What We Talked Through</h4>
+          <p>Option 1: Sell first. One mortgage payment, less financial risk, but may need temporary housing.</p>
+          <p>Option 2: Buy first. Easier move and more flexibility finding the right home, but may temporarily have two mortgage payments.</p>
+          <p>Option 3: Use a bridge loan. Access equity from the current home and buy before selling, but may temporarily have three payments: the current mortgage, the new mortgage, and the bridge loan.</p>
+          <p>None of these options is automatically right or wrong. The best choice depends on your overall financial picture.</p>
+          <h4 class="guide-subhead">Michelle’s Thought Process</h4>
+          <p>When someone tells me they want to buy before selling, I am not trying to figure out how to make the loan work.</p>
+          <p>I am trying to figure out how to make the plan work.</p>
+          <p>Those are two different conversations.</p>
+          <p>Just because a lender can approve the loan does not mean that is the smartest path for your situation.</p>
+          <h4 class="guide-subhead">Common Assumption</h4>
+          <p>Assumption: “If I qualify, I should buy before I sell.”</p>
+          <p>Reality: Qualifying is only part of the decision. The better question is whether you will still feel financially comfortable if everything takes longer than expected.</p>
+          <h4 class="guide-subhead">Key Takeaway</h4>
+          <p>Buying before selling can be a great strategy. Selling before buying can also be a great strategy.</p>
+          <p>The goal is not to force one approach. The goal is to understand the tradeoffs, compare your options, and choose the one that gives you the most confidence moving forward.</p>
+          <p>Before you decide whether to buy first or sell first, let's look at your options together and build a plan that fits your goals - not just today's market.</p>
+          <p class="guide-cta-links"><a href="https://calendly.com/michellewiller" target="_blank" rel="noopener">Schedule a Mortgage Strategy Call</a><span class="cta-sep">&middot;</span><a href="https://home.fbhl.com/signup/michelle.willer/D3RUKIVECCMA3ILN1C5G" target="_blank" rel="noopener">Start Application</a></p>
+          <button class="guide-collapse" type="button">Collapse &#8593;</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="guide-item" data-guide="5">
+        <button class="guide-header" aria-expanded="false">
+          <span class="guide-num">05</span>
+          <span class="guide-title-text">Should You Choose a 15-Year, 20-Year, or 30-Year Mortgage?</span>
+          <span class="guide-icon"></span>
+        </button>
+        <div class="guide-panel">
+          <div class="guide-panel-inner">
+          <p>Most people think there are only three choices: 15 years, 20 years, and 30 years.</p>
+          <p>The truth is, you have far more options than that.</p>
+          <p>The best loan term is not the shortest one. It is not the longest one.</p>
+          <p>It is the one that fits your life and your financial goals.</p>
+          <p>Before we decide on a loan term, let's talk it through.</p>
+          <h4 class="guide-subhead">Before We Answer That</h4>
+          <ul class="guide-list-q">
+          <li>What monthly payment feels comfortable?</li>
+          <li>Are you trying to be debt-free before retirement?</li>
+          <li>Do you naturally save money?</li>
+          <li>Or do you tend to spend whatever is left over each month?</li>
+          <li>How much other debt do you have?</li>
+          <li>How stable is your income?</li>
+          <li>Do you expect any major life changes?</li>
+          <li>Is paying your mortgage off quickly your biggest goal, or is keeping flexibility more important?</li>
+          </ul>
+          <h4 class="guide-subhead">Why I Ask</h4>
+          <p>Choosing a mortgage is not just about interest rates.</p>
+          <p>It is about behavior.</p>
+          <p>Some people love having a higher required payment because it forces them to save. Others are disciplined enough to make extra payments whenever it makes sense.</p>
+          <p>Neither approach is right or wrong.</p>
+          <p>The goal is choosing a payment you will feel comfortable making - not just this year, but for many years to come.</p>
+          <h4 class="guide-subhead">A Real Client Conversation</h4>
+          <p>A client came to me convinced they needed a 20-year mortgage.</p>
+          <p>When I asked why, they said something I have heard many times: “If I don't force myself to make the higher payment, I'll just spend the money on something else.”</p>
+          <p>For them, the shorter loan was not really about the interest rate. It was about accountability.</p>
+          <p>Another client had the exact opposite mindset.</p>
+          <p>They were excellent savers and wanted maximum flexibility.</p>
+          <p>Instead of locking themselves into a higher required payment, they chose a 30-year mortgage and planned to make additional principal payments whenever it made sense.</p>
+          <p>Both clients reached the same goal. They simply took different paths.</p>
+          <h4 class="guide-subhead">Something Most People Do Not Know</h4>
+          <p>Many people believe they can only choose a 15-year, 20-year, or 30-year mortgage.</p>
+          <p>That is not always true.</p>
+          <p>If you are refinancing, you may be able to choose a custom loan term that better fits your goals.</p>
+          <p>Maybe that is 27 years, 22 years, 17 years, or 8 years.</p>
+          <p>Or maybe you choose a 30-year mortgage and simply make extra principal payments with the goal of paying it off in 18 years.</p>
+          <p>There is not just one way to reach your goal.</p>
+          <h4 class="guide-subhead">Michelle’s Thought Process</h4>
+          <p>When someone asks me whether they should choose a 15-year or a 30-year mortgage, I am not really thinking about the loan first.</p>
+          <p>I am thinking about the person.</p>
+          <p>How do they manage money? What helps them succeed? Will they appreciate flexibility? Or do they prefer a payment that keeps them disciplined?</p>
+          <p>Once I understand that, the right loan structure usually becomes much clearer.</p>
+          <h4 class="guide-subhead">Common Assumption</h4>
+          <p>Assumption: “The shorter the mortgage, the smarter the decision.”</p>
+          <p>Reality: Sometimes a shorter loan is exactly the right choice. Sometimes having the flexibility of a lower required payment creates a stronger financial position.</p>
+          <h4 class="guide-subhead">Key Takeaway</h4>
+          <p>The best mortgage term is not the one someone else tells you to choose.</p>
+          <p>It is the one that supports your goals, fits your lifestyle, and helps you make consistent financial progress.</p>
+          <p>If you are deciding between a 15-year, 20-year, or 30-year mortgage - or you did not realize there were other options - let's compare a few scenarios together.</p>
+          <p class="guide-cta-links"><a href="https://calendly.com/michellewiller" target="_blank" rel="noopener">Schedule a Mortgage Strategy Call</a><span class="cta-sep">&middot;</span><a href="https://home.fbhl.com/signup/michelle.willer/D3RUKIVECCMA3ILN1C5G" target="_blank" rel="noopener">Start Application</a></p>
+          <button class="guide-collapse" type="button">Collapse &#8593;</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="guide-item" data-guide="6">
+        <button class="guide-header" aria-expanded="false">
+          <span class="guide-num">06</span>
+          <span class="guide-title-text">Does It Actually Make Sense to Refinance?</span>
+          <span class="guide-icon"></span>
+        </button>
+        <div class="guide-panel">
+          <div class="guide-panel-inner">
+          <p>Refinancing can be a smart move.</p>
+          <p>But not always.</p>
+          <p>The goal is not to refinance just because rates changed.</p>
+          <p>The goal is to understand whether refinancing actually improves your financial position.</p>
+          <p>Before we decide, let's talk it through.</p>
+          <h4 class="guide-subhead">Before We Answer That</h4>
+          <ul class="guide-list-q">
+          <li>What is your main goal?</li>
+          <li>Are you trying to lower your monthly payment?</li>
+          <li>Are you trying to lower your interest rate?</li>
+          <li>Do you want a different loan term?</li>
+          <li>Are you taking cash out?</li>
+          <li>Are you consolidating debt?</li>
+          <li>Are you paying for home improvements?</li>
+          <li>How long do you plan to keep the home?</li>
+          <li>How long do you plan to keep this new loan?</li>
+          <li>How much would the refinance actually save you each month?</li>
+          <li>Are closing costs being paid upfront or rolled into the loan?</li>
+          </ul>
+          <h4 class="guide-subhead">Why I Ask</h4>
+          <p>A lower interest rate does not automatically mean a refinance makes sense.</p>
+          <p>We need to look at the full picture.</p>
+          <p>Sometimes saving $150 per month is a big deal. For one client, that could create breathing room every month. For another client, $150 may not be worth the time, paperwork, and closing costs.</p>
+          <p>That is why I do not look at the rate by itself. I look at the result.</p>
+          <h4 class="guide-subhead">What We Compare</h4>
+          <p>When a refinance may make sense, I like to put the current loan next to a few possible new options.</p>
+          <p>We may compare the current loan: current balance, current payment, current rate, and remaining term.</p>
+          <p>Then we compare new options: a lower rate with closing costs rolled in, a lower rate with closing costs paid upfront, a shorter or custom term, or a cash-out refinance for debt payoff or home improvements.</p>
+          <p>Seeing the numbers side by side usually makes the decision much clearer.</p>
+          <h4 class="guide-subhead">A Real Client Conversation</h4>
+          <p>Sometimes a client calls and says: “Rates are lower. Should I refinance?”</p>
+          <p>My answer is usually: Maybe. Let's see if it actually helps you.</p>
+          <p>If the goal is to save money, we look at the real monthly savings. Then we compare that savings to the cost of doing the refinance.</p>
+          <p>If the numbers are not strong enough, I will tell them.</p>
+          <p>There are plenty of times when I have told a client: “I don't think this makes sense yet.”</p>
+          <p>That matters because refinancing should solve a real problem. It should not just create another transaction.</p>
+          <h4 class="guide-subhead">Michelle’s Thought Process</h4>
+          <p>When someone asks about refinancing, I am not trying to sell them a new loan.</p>
+          <p>I am trying to figure out if the refinance actually helps.</p>
+          <p>Does it lower their payment enough? Does it shorten the term in a way that still feels comfortable? Does it help them pay off debt? Does it give them cash for a needed project? Does it put them in a stronger position?</p>
+          <p>If it does, we look deeper. If it does not, I would rather tell them to wait.</p>
+          <h4 class="guide-subhead">Common Assumption</h4>
+          <p>Assumption: “If the rate is lower, I should refinance.”</p>
+          <p>Reality: Not always. A better question is whether the refinance improves your situation enough to justify the cost and effort.</p>
+          <h4 class="guide-subhead">Key Takeaway</h4>
+          <p>A refinance should have a clear purpose.</p>
+          <p>If we cannot clearly explain why the refinance helps, it may not be the right move yet.</p>
+          <p>If you are wondering whether refinancing makes sense, let's compare your current loan with a few possible options. The goal is not just to get a new rate. The goal is to make sure the refinance is actually worth it.</p>
+          <p class="guide-cta-links"><a href="https://calendly.com/michellewiller" target="_blank" rel="noopener">Schedule a Mortgage Strategy Call</a><span class="cta-sep">&middot;</span><a href="https://home.fbhl.com/signup/michelle.willer/D3RUKIVECCMA3ILN1C5G" target="_blank" rel="noopener">Start Application</a></p>
+          <button class="guide-collapse" type="button">Collapse &#8593;</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="guide-item" data-guide="7">
+        <button class="guide-header" aria-expanded="false">
+          <span class="guide-num">07</span>
+          <span class="guide-title-text">Should You Pay Discount Points to Get a Lower Interest Rate?</span>
+          <span class="guide-icon"></span>
+        </button>
+        <div class="guide-panel">
+          <div class="guide-panel-inner">
+          <p>A lower interest rate sounds great.</p>
+          <p>But should you pay extra to get it?</p>
+          <p>Sometimes yes. Sometimes no.</p>
+          <p>The answer depends on much more than today's interest rate.</p>
+          <p>Before we decide, let's talk it through.</p>
+          <h4 class="guide-subhead">Before We Answer That</h4>
+          <ul class="guide-list-q">
+          <li>How long do you plan to keep this home?</li>
+          <li>How long do you think you will keep this loan?</li>
+          <li>Why do you want the lower interest rate?</li>
+          <li>Are you trying to lower your monthly payment?</li>
+          <li>Are you trying to qualify for a specific payment?</li>
+          <li>How much does it cost to buy the rate down today?</li>
+          <li>How long will it take to recover that cost through monthly savings?</li>
+          <li>What do we think interest rates may do over the next few years?</li>
+          </ul>
+          <h4 class="guide-subhead">Why I Ask</h4>
+          <p>Many people assume lower rate equals better deal.</p>
+          <p>Not always.</p>
+          <p>A lower rate costs money. The question is whether you will own the loan long enough to recover that cost.</p>
+          <p>Sometimes paying a few hundred dollars to lower the rate makes perfect sense.</p>
+          <p>Sometimes spending several thousand dollars only saves a small amount each month and never pays for itself before the loan is refinanced or the home is sold.</p>
+          <p>That is why we compare the numbers instead of making assumptions.</p>
+          <h4 class="guide-subhead">A Real Client Conversation</h4>
+          <p>I worked with a client who wanted to pay several thousand dollars to lower their interest rate.</p>
+          <p>At first, that sounded expensive.</p>
+          <p>So we talked through their goals.</p>
+          <p>They planned to stay in the home for a long time, and they believed interest rates were more likely to stay the same or increase than fall in the near future.</p>
+          <p>Their goal was not just getting a lower rate. They wanted to avoid refinancing later.</p>
+          <p>After comparing several scenarios, paying points made sense for them because it supported their long-term plan.</p>
+          <p>I have also had clients where the exact opposite was true. Instead of paying thousands of dollars upfront, we kept the higher rate because refinancing within a few years was likely.</p>
+          <p>The smartest answer depended on the situation - not the loan program.</p>
+          <h4 class="guide-subhead">Another Situation I See</h4>
+          <p>Sometimes clients are completing a cash-out refinance.</p>
+          <p>Their biggest concern is not the interest rate. It is the monthly payment.</p>
+          <p>We have occasionally used discount points to lower the payment enough that their new mortgage payment stayed very close to what they were already paying.</p>
+          <p>That allowed them to access equity for another financial goal without creating a major impact on their monthly budget.</p>
+          <p>Again, the points were not the goal. The monthly payment was.</p>
+          <h4 class="guide-subhead">Michelle’s Thought Process</h4>
+          <p>When someone asks me whether they should pay points, I do not start with today's rate sheet.</p>
+          <p>I start with their plan.</p>
+          <p>If you are only keeping the loan for a few years, paying thousands of dollars upfront may never pay you back.</p>
+          <p>If you are planning to stay for many years, the conversation may look completely different.</p>
+          <p>Every day the cost of buying down the rate changes. That is why I do not make this decision in advance.</p>
+          <p>When it is time to lock your interest rate, we compare the options side by side and see which one makes the most financial sense that day.</p>
+          <h4 class="guide-subhead">Common Assumption</h4>
+          <p>Assumption: “The lowest interest rate is always the best choice.”</p>
+          <p>Reality: Sometimes the lowest rate costs more than it is worth. Sometimes it is an excellent investment.</p>
+          <h4 class="guide-subhead">Key Takeaway</h4>
+          <p>Discount points are not good or bad. They are simply another tool.</p>
+          <p>Sometimes they are one of the smartest investments you can make. Sometimes they are an unnecessary expense.</p>
+          <p>If you are wondering whether paying points makes sense, let's compare the options together. The right answer starts with your goals - not just the interest rate.</p>
+          <p class="guide-cta-links"><a href="https://calendly.com/michellewiller" target="_blank" rel="noopener">Schedule a Mortgage Strategy Call</a><span class="cta-sep">&middot;</span><a href="https://home.fbhl.com/signup/michelle.willer/D3RUKIVECCMA3ILN1C5G" target="_blank" rel="noopener">Start Application</a></p>
+          <button class="guide-collapse" type="button">Collapse &#8593;</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="guide-item" data-guide="8">
+        <button class="guide-header" aria-expanded="false">
+          <span class="guide-num">08</span>
+          <span class="guide-title-text">How to Buy Your First Rental Property Sooner</span>
+          <span class="guide-icon"></span>
+        </button>
+        <div class="guide-panel">
+          <div class="guide-panel-inner">
+          <p>Many people tell me: “I'd love to own rental properties someday.”</p>
+          <p>Then they buy their home without ever talking about that goal.</p>
+          <p>A few years later they realize the way they financed their primary home actually slowed them down.</p>
+          <p>If owning rental property is part of your long-term plan, I want to know that before you buy your next home.</p>
+          <p>Because your first mortgage can help - or hurt - your future investment plans.</p>
+          <h4 class="guide-subhead">Before We Answer That</h4>
+          <ul class="guide-list-q">
+          <li>Is owning rental property one of your long-term goals?</li>
+          <li>When would you like to buy your first investment property?</li>
+          <li>Are you thinking one rental or several?</li>
+          <li>Are you interested in single-family homes?</li>
+          <li>Duplexes or four-family properties?</li>
+          <li>Vacation rentals?</li>
+          <li>Are you planning to buy locally or out of state?</li>
+          <li>How much cash do you have available today?</li>
+          <li>How quickly do you want to grow your portfolio?</li>
+          </ul>
+          <h4 class="guide-subhead">Why I Ask</h4>
+          <p>Many buyers assume they should put as much money down as possible on their primary home.</p>
+          <p>Sometimes that makes sense.</p>
+          <p>Sometimes it delays their investment goals by several years.</p>
+          <p>If your goal is to build a portfolio of rental properties, we may want to think differently.</p>
+          <p>The mortgage you choose today can affect how quickly you can buy your next property.</p>
+          <h4 class="guide-subhead">A Real Client Conversation</h4>
+          <p>A client told me they wanted to own rental properties.</p>
+          <p>Their original plan was to put 20% down on the home they were buying for themselves.</p>
+          <p>When we talked through their long-term goals, we realized something.</p>
+          <p>If they used all of that cash today, it would likely take another five years to save enough for a rental property.</p>
+          <p>So we looked at another option.</p>
+          <p>Instead of putting 20% down, we explored using the minimum down payment available for a primary residence.</p>
+          <p>That allowed them to keep significantly more cash available.</p>
+          <p>Now they could potentially buy another home much sooner instead of waiting years to rebuild their savings.</p>
+          <p>The goal was not simply buying one house. The goal was building toward multiple properties.</p>
+          <h4 class="guide-subhead">Another Strategy We Talk Through</h4>
+          <p>Sometimes your first home does not have to be your forever home.</p>
+          <p>If the property works well as a future rental, you might buy it as your primary residence, live there for a period of time, move into another primary residence later, and keep the first home as a rental.</p>
+          <p>Since primary residences often require much lower down payments than investment properties, this approach may allow some buyers to build a portfolio faster than purchasing every property as an investment from day one.</p>
+          <p>Every situation is different, so it is important to discuss the strategy with your CPA, financial advisor, and mortgage professional.</p>
+          <h4 class="guide-subhead">Michelle’s Thought Process</h4>
+          <p>When someone tells me they want rental properties someday, I stop thinking only about the house they are buying today.</p>
+          <p>I am thinking about the next house. And maybe the one after that.</p>
+          <p>Your first mortgage should not just help you buy one home. It should support where you are trying to be five or ten years from now.</p>
+          <h4 class="guide-subhead">Common Assumption</h4>
+          <p>Assumption: “I should put as much money down as possible on my primary home.”</p>
+          <p>Reality: If your long-term goal is investing in real estate, keeping more cash available today may help you reach that goal sooner.</p>
+          <h4 class="guide-subhead">Key Takeaway</h4>
+          <p>Buying your primary home and building a rental portfolio do not have to be separate goals.</p>
+          <p>When we talk about your long-term plans before you buy, we can often structure today's purchase in a way that supports tomorrow's opportunities.</p>
+          <p>If owning rental property is one of your goals - even if it is several years away - let's talk about it before you buy your next home.</p>
+          <p class="guide-cta-links"><a href="https://calendly.com/michellewiller" target="_blank" rel="noopener">Schedule a Mortgage Strategy Call</a><span class="cta-sep">&middot;</span><a href="https://home.fbhl.com/signup/michelle.willer/D3RUKIVECCMA3ILN1C5G" target="_blank" rel="noopener">Start Application</a></p>
+          <button class="guide-collapse" type="button">Collapse &#8593;</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="guide-item" data-guide="9">
+        <button class="guide-header" aria-expanded="false">
+          <span class="guide-num">09</span>
+          <span class="guide-title-text">Why We Fully Review Your Loan Before You Start House Hunting</span>
+          <span class="guide-icon"></span>
+        </button>
+        <div class="guide-panel">
+          <div class="guide-panel-inner">
+          <p>Many buyers think getting pre-approved means filling out an application online and receiving a letter.</p>
+          <p>Sometimes that is all it is.</p>
+          <p>Our process is different.</p>
+          <p>Before you start looking at homes, we want to make sure we have already done as much work as possible.</p>
+          <p>The goal is not just getting you a pre-approval letter.</p>
+          <p>The goal is helping you make a confident offer with fewer surprises later.</p>
+          <h4 class="guide-subhead">Before We Start</h4>
+          <ul class="guide-list-q">
+          <li>What are you trying to accomplish?</li>
+          <li>What monthly payment feels comfortable?</li>
+          <li>How much do you want to put down?</li>
+          <li>How much cash do you want to keep after closing?</li>
+          <li>Do you have another home to sell?</li>
+          <li>Are there multiple ways we could structure the loan?</li>
+          <li>Are there future goals we should plan around?</li>
+          </ul>
+          <h4 class="guide-subhead">Why I Ask These Questions First</h4>
+          <p>The application tells me your numbers.</p>
+          <p>It does not tell me your goals.</p>
+          <p>There is a big difference.</p>
+          <p>If we understand your goals first, we can compare different loan structures before you start writing offers.</p>
+          <p>That means you are making decisions with a plan instead of reacting under pressure after you fall in love with a house.</p>
+          <h4 class="guide-subhead">Our Approval Process</h4>
+          <p>Once we have talked through your options and decided on the best direction, we begin collecting your documentation.</p>
+          <p>That may include income documents, asset statements, employment information, and any other items needed to fully review your file.</p>
+          <p>Then we do not stop there.</p>
+          <p>Your file is reviewed by our underwriting team before you begin shopping for a home.</p>
+          <p>That means multiple experienced people have already reviewed your information.</p>
+          <p>We are not simply hoping everything works out later. We are working to identify potential issues before they become problems.</p>
+          <h4 class="guide-subhead">Why This Matters</h4>
+          <p>Once you find the right home, time matters.</p>
+          <p>If we have already completed most of the work, there are usually only a few items left to complete, such as the appraisal, title work, homeowners insurance, and updated pay stubs or bank statements if needed.</p>
+          <p>That often allows us to move much faster than if we were starting from scratch after your offer is accepted.</p>
+          <h4 class="guide-subhead">A Real Difference</h4>
+          <p>I have had many real estate agents tell me they feel more confident when they see our pre-approval letter attached to an offer.</p>
+          <p>Why?</p>
+          <p>Because they know we have already done the work.</p>
+          <p>We have asked the questions. We have reviewed the documents. We have had underwriting look at the file.</p>
+          <p>That gives everyone more confidence moving forward.</p>
+          <p>No lender can guarantee a closing. Life happens. People change jobs. Credit changes. New debt gets opened.</p>
+          <p>Those things are outside anyone's control.</p>
+          <p>But we can control how thoroughly we prepare your file before you ever write an offer.</p>
+          <h4 class="guide-subhead">Michelle’s Thought Process</h4>
+          <p>When someone calls me, I am not trying to get them pre-approved as fast as possible.</p>
+          <p>I am trying to get them prepared.</p>
+          <p>Those are two different things.</p>
+          <p>I would rather spend a little more time upfront than have you discover a problem after you have already found your dream home.</p>
+          <p>Preparation creates confidence. And confidence makes buying a home much less stressful.</p>
+          <h4 class="guide-subhead">Common Assumption</h4>
+          <p>Assumption: “A pre-approval letter means my loan is approved.”</p>
+          <p>Reality: Not always. Some lenders issue a pre-approval based only on an application and a conversation. We believe in taking additional steps upfront whenever possible.</p>
+          <h4 class="guide-subhead">Key Takeaway</h4>
+          <p>A pre-approval letter is important.</p>
+          <p>But what happens before that letter is issued is even more important.</p>
+          <p>The more work we do upfront, the smoother the process tends to be after you are under contract.</p>
+          <p>If you are thinking about buying a home, let's build your plan before you start shopping.</p>
+          <p class="guide-cta-links"><a href="https://calendly.com/michellewiller" target="_blank" rel="noopener">Schedule a Mortgage Strategy Call</a><span class="cta-sep">&middot;</span><a href="https://home.fbhl.com/signup/michelle.willer/D3RUKIVECCMA3ILN1C5G" target="_blank" rel="noopener">Start Application</a></p>
+          <button class="guide-collapse" type="button">Collapse &#8593;</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="guide-item" data-guide="10">
+        <button class="guide-header" aria-expanded="false">
+          <span class="guide-num">10</span>
+          <span class="guide-title-text">When Should You Start Talking to a Mortgage Lender?</span>
+          <span class="guide-icon"></span>
+        </button>
+        <div class="guide-panel">
+          <div class="guide-panel-inner">
+          <p>Most people wait too long.</p>
+          <p>They find a house online. They drive by it. They go to an open house.</p>
+          <p>Then they call a lender.</p>
+          <p>Usually with less than 24 hours before offers are due.</p>
+          <p>Sometimes with only a few hours.</p>
+          <p>At that point, the goal is not strategy.</p>
+          <p>The goal is: “How do I get approved fast enough to make an offer?”</p>
+          <p>That changes everything.</p>
+          <h4 class="guide-subhead">Before We Answer That</h4>
+          <ul class="guide-list-q">
+          <li>What are you trying to accomplish with this purchase?</li>
+          <li>What monthly payment feels comfortable?</li>
+          <li>How much do you want to put down?</li>
+          <li>How much cash do you want to keep after closing?</li>
+          <li>Do you need to sell another home?</li>
+          <li>What else is happening in your life financially?</li>
+          <li>Are there multiple ways we could structure this?</li>
+          </ul>
+          <h4 class="guide-subhead">Why Timing Matters</h4>
+          <p>When someone calls a day before offers are due, they are focused on one thing: getting the house.</p>
+          <p>Not setting up the loan correctly. Not comparing options. Not thinking through tradeoffs.</p>
+          <p>They are trying to move fast.</p>
+          <p>So even when we go through the process, it is harder for them to slow down and fully think through their decisions.</p>
+          <p>That is where opportunities get missed.</p>
+          <h4 class="guide-subhead">What Gets Missed When You Wait</h4>
+          <p>When the timeline is tight, we may not have the chance to fully explore different down payment strategies, better ways to structure the loan, how this fits into your overall financial plan, coordination with your financial advisor or CPA, or how much cash you actually want to keep.</p>
+          <p>The loan still gets done.</p>
+          <p>But it may not be set up in the best way for you.</p>
+          <h4 class="guide-subhead">What Happens When You Start Early</h4>
+          <p>The best conversations happen before you ever find a house.</p>
+          <p>Six months early. A year early. Even just a few months ahead.</p>
+          <p>That is when we can talk through your goals without pressure, compare multiple scenarios, identify anything that needs to change, plan your down payment strategy, prepare your documentation, and set clear expectations.</p>
+          <p>So when you do find the right house, you are not scrambling. You are ready.</p>
+          <h4 class="guide-subhead">A Real Scenario I See All the Time</h4>
+          <p>A client finds a home they love.</p>
+          <p>They call me the same day.</p>
+          <p>Offers are due tomorrow.</p>
+          <p>We go through everything as quickly as we can. We still get them approved. They still make the offer.</p>
+          <p>But the entire time, they are juggling a major financial decision, trying to win the house, thinking about moving, and figuring out logistics.</p>
+          <p>There is very little space to think clearly.</p>
+          <p>Compare that to a client who called months earlier.</p>
+          <p>We have already done the work.</p>
+          <p>When they find a house, all we do is update the letter.</p>
+          <p>That is a very different experience.</p>
+          <h4 class="guide-subhead">Michelle’s Thought Process</h4>
+          <p>When someone calls me early, I am not trying to get them approved as fast as possible.</p>
+          <p>I am trying to get them prepared.</p>
+          <p>Prepared means you understand your options, you have seen different scenarios, you know what fits your life, and you are confident in your numbers.</p>
+          <p>So when the right house comes along, you are making a decision - not reacting to one.</p>
+          <h4 class="guide-subhead">Common Assumption</h4>
+          <p>Assumption: “I'll talk to a lender once I find a house.”</p>
+          <p>Reality: That is when most people start. It is just not the best time.</p>
+          <h4 class="guide-subhead">Key Takeaway</h4>
+          <p>The best time to talk to a mortgage lender is not when you find a house.</p>
+          <p>It is before you start looking.</p>
+          <p>If you are thinking about buying, even if it is months away, let's talk through your options now. That way, when the right house shows up, you are ready to move forward with confidence.</p>
+          <p class="guide-cta-links"><a href="https://calendly.com/michellewiller" target="_blank" rel="noopener">Schedule a Mortgage Strategy Call</a><span class="cta-sep">&middot;</span><a href="https://home.fbhl.com/signup/michelle.willer/D3RUKIVECCMA3ILN1C5G" target="_blank" rel="noopener">Start Application</a></p>
+          <button class="guide-collapse" type="button">Collapse &#8593;</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="guide-item" data-guide="11">
+        <button class="guide-header" aria-expanded="false">
+          <span class="guide-num">11</span>
+          <span class="guide-title-text">How Much House Should You Really Buy?</span>
+          <span class="guide-icon"></span>
+        </button>
+        <div class="guide-panel">
+          <div class="guide-panel-inner">
+          <p>One of the first questions people ask is: “How much can I qualify for?”</p>
+          <p>It is a fair question.</p>
+          <p>But it is usually the wrong one.</p>
+          <p>Because what you can qualify for and what you should feel comfortable spending are often two very different numbers.</p>
+          <h4 class="guide-subhead">Before We Answer That</h4>
+          <ul class="guide-list-q">
+          <li>What monthly payment feels comfortable to you?</li>
+          <li>How much do you want left over each month after all expenses?</li>
+          <li>How much cash do you want to keep after closing?</li>
+          <li>What other financial goals do you have?</li>
+          <li>Are there any big life changes coming up?</li>
+          <li>Do you prefer flexibility, or are you comfortable with a tighter budget?</li>
+          </ul>
+          <h4 class="guide-subhead">Why This Matters</h4>
+          <p>Mortgage guidelines allow for higher debt levels than most people expect.</p>
+          <p>That means you may qualify for a home that stretches your budget more than you would actually feel comfortable with day to day.</p>
+          <p>I have had clients who technically qualified for a $2 million home.</p>
+          <p>When I told them that, they laughed.</p>
+          <p>Because they knew there was no way they would feel comfortable living with that payment.</p>
+          <p>Their real comfort level might have been closer to $750,000.</p>
+          <p>And that is the number that actually matters.</p>
+          <h4 class="guide-subhead">The Problem With Starting at the Maximum</h4>
+          <p>If you start with: “What's the most I can buy?”</p>
+          <p>You are building your decision around a number that does not take into account your lifestyle, spending habits, savings goals, or comfort with risk.</p>
+          <p>That is how people end up feeling house-rich and cash-poor.</p>
+          <p>And that is not a position most people want to be in.</p>
+          <h4 class="guide-subhead">A Better Way to Think About It</h4>
+          <p>Instead of starting with the purchase price, we start with the payment.</p>
+          <p>What feels comfortable?</p>
+          <p>What gives you room to travel, save, invest, handle unexpected expenses, and enjoy your life?</p>
+          <p>Once we know that number, we can work backward to find the price range that fits.</p>
+          <h4 class="guide-subhead">A Real Conversation I Have Often</h4>
+          <p>A client asks: “What can I qualify for?”</p>
+          <p>I answer: “That is one number. Let's figure out what you actually want to spend.”</p>
+          <p>Then we walk through different scenarios.</p>
+          <p>Different payments. Different down payments. Different loan structures.</p>
+          <p>Once they see the options, the right range usually becomes clear very quickly.</p>
+          <h4 class="guide-subhead">Michelle’s Thought Process</h4>
+          <p>When someone asks how much they can qualify for, I am not trying to find the highest number.</p>
+          <p>I am trying to find the right number.</p>
+          <p>The number where you feel comfortable every month. The number where you still have flexibility. The number that supports the rest of your financial goals - not just your mortgage.</p>
+          <h4 class="guide-subhead">Common Assumption</h4>
+          <p>Assumption: “I should buy as much house as I can qualify for.”</p>
+          <p>Reality: Just because a lender approves a number does not mean that number fits your life.</p>
+          <h4 class="guide-subhead">Key Takeaway</h4>
+          <p>The goal is not to buy the most house possible.</p>
+          <p>It is to buy the right house for your lifestyle, your goals, and your long-term financial picture.</p>
+          <p>If you are wondering how much house makes sense for you, let's look at your numbers together. We will walk through different payment options and help you find a range that feels right - not just one you qualify for.</p>
+          <p class="guide-cta-links"><a href="https://calendly.com/michellewiller" target="_blank" rel="noopener">Schedule a Mortgage Strategy Call</a><span class="cta-sep">&middot;</span><a href="https://home.fbhl.com/signup/michelle.willer/D3RUKIVECCMA3ILN1C5G" target="_blank" rel="noopener">Start Application</a></p>
+          <button class="guide-collapse" type="button">Collapse &#8593;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOTTOM CTA -->
+  <section class="final-cta">
+    <div class="final-cta-bg"></div>
+    <div class="final-cta-content reveal">
+      <h2>Before you buy, refinance, or<br>make an offer, <em>let&#8217;s talk.</em></h2>
+      <p>We will look at your goals, income, cash, timing, and options so you can make a more confident mortgage decision.</p>
+      <div class="final-cta-btns">
+        <a href="https://calendly.com/michellewiller" class="btn-primary" target="_blank" rel="noopener">Schedule a Mortgage Strategy Call</a>
+        <a href="https://home.fbhl.com/signup/michelle.willer/D3RUKIVECCMA3ILN1C5G" class="btn-ghost" target="_blank" rel="noopener">Start Application</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-left">
+      <span class="footer-logo-esq">ESQ</span>
+      <span class="footer-logo-line"></span>
+      <span class="footer-logo-sub">Home Loans</span>
+
+      <p>
+        Michelle Willer &#183; Senior Mortgage Banker &#183; NMLS 595462<br>
+        Flat Branch Home Loans &#183; NMLS 224149 &#183; Equal Housing Lender
+      </p>
+
+      <p>
+        <a href="https://flatbranchhomeloans.com/legal/licenses" target="_blank" rel="noopener noreferrer">Licensing</a>
+        |
+        <a href="https://flatbranchhomeloans.com/privacy" target="_blank" rel="noopener noreferrer">Privacy</a>
+      </p>
+
+      <p>
+        Flat Branch Home Loans is a division of Flat Branch Mortgage Inc. For licensing information, go to nmlsconsumeraccess.org. This is not a commitment to lend. All loans subject to underwriting approval. Terms and availability of programs may vary depending on individual circumstances.
+      </p>
+    </div>
+
+    <div class="footer-right">
+      esqhomeloans.com
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <script>
+    const nav = document.getElementById('nav');
+    const backToTop = document.getElementById('backToTop');
+
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 40);
+      backToTop.classList.toggle('visible', window.scrollY > 400);
+    });
+
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), i * 60);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    reveals.forEach(el => observer.observe(el));
+
+    // ACCORDION
+    document.querySelectorAll('.guide-header').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.guide-item');
+        const isOpen = item.classList.contains('open');
+        item.classList.toggle('open', !isOpen);
+        btn.setAttribute('aria-expanded', String(!isOpen));
+      });
+    });
+
+    document.querySelectorAll('.guide-collapse').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.guide-item');
+        const header = item.querySelector('.guide-header');
+        item.classList.remove('open');
+        header.setAttribute('aria-expanded', 'false');
+        const y = header.getBoundingClientRect().top + window.scrollY - 90;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+      });
+    });
+  </script>
+
+</body>
+</html>
