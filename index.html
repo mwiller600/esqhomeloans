@@ -73,50 +73,9 @@
   align-items: center;
   gap: 20px;
   cursor: pointer;
-}
-.nav-logo-esq-col {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 5px;
-}
-.nav-logo-rule {
-  width: 1px;
-  height: 32px;
-  background: rgba(240,234,216,0.15);
-}
-.nav-logo-fb {
-  height: 38px;
+}.nav-logo-full {
+  height: 64px;
   width: auto;
-  opacity: 0.85;
-}
-.nav-logo-esq-wrap {
-  position: relative;
-  padding-bottom: 5px;
-}
-.nav-logo-esq {
-  font-family: var(--serif);
-  font-size: 22px;
-  font-weight: 400;
-  letter-spacing: .18em;
-  color: var(--cream);
-  line-height: 1;
-  display: block;
-}
-.nav-logo-line {
-  position: absolute;
-  bottom: 0; left: 0; right: 0;
-  height: 1.5px;
-  background: linear-gradient(90deg, transparent, var(--gold), transparent);
-}
-.nav-logo-sub {
-  font-family: var(--sans);
-  font-size: 8px;
-  font-weight: 600;
-  letter-spacing: .38em;
-  text-transform: uppercase;
-  color: #ffffff;
-  line-height: 1;
 }
     .nav-links {
       display: flex;
@@ -720,28 +679,12 @@
       text-align: right;
       line-height: 1.9;
     }
-    .footer-logo-esq {
-      color: rgba(200,146,42,.9);
-      font-family: var(--serif);
-      font-size: 15px;
-      letter-spacing: .1em;
-    }
-    .footer-logo-line {
-      display: block;
-      height: 1px;
-      background: linear-gradient(90deg,transparent,rgba(200,146,42,.3),transparent);
-      margin: 3px 0;
-    }
-    .footer-logo-sub {
-      display: block;
-      font-family: var(--sans);
-      font-size: 7px;
-      font-weight: 600;
-      letter-spacing: .3em;
-      color: rgba(255,255,255,.6);
-      text-transform: uppercase;
-      margin-bottom: 10px;
-    }
+.footer-logo-full {
+  display: block;
+  height: 80px;
+  width: auto;
+  margin-bottom: 12px;
+}
 /* BACK TO TOP */
 .back-to-top {
   position: fixed;
@@ -821,15 +764,7 @@
   <!-- NAV -->
 <nav id="nav">
   <div class="nav-logo">
-    <div class="nav-logo-esq-col">
-      <div class="nav-logo-esq-wrap">
-        <span class="nav-logo-esq">ESQ</span>
-        <div class="nav-logo-line"></div>
-      </div>
-      <span class="nav-logo-sub">Home Loans</span>
-    </div>
-    <div class="nav-logo-rule"></div>
-    <img src="ESQ FBHL.png" alt="Flat Branch Home Loans" class="nav-logo-fb" />
+<img src="ESQ FBHL.png" alt="ESQ Home Loans, powered by Flat Branch Mortgage Inc." class="nav-logo-full" />
   </div>
   <ul class="nav-links">
     <li><a href="#challenges">Challenges</a></li>
@@ -1109,9 +1044,7 @@
 <!-- FOOTER -->
 <footer>
   <div class="footer-left">
-    <span class="footer-logo-esq">ESQ</span>
-    <span class="footer-logo-line"></span>
-    <span class="footer-logo-sub">Home Loans</span>
+    <img src="ESQ FBHL.png" alt="ESQ Home Loans, powered by Flat Branch Mortgage Inc." class="footer-logo-full" />
 
     <p>
       Michelle Willer · Senior Mortgage Banker · NMLS 595462<br>
